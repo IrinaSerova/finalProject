@@ -1,0 +1,42 @@
+.media{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+.item {
+    padding-bottom: 20px;
+    padding-top:10px;
+    border-top: dotted $burntOrange 1px;
+    &:hover {
+        background-color: $sunshineYellow;        
+    }
+    &:last-of-type{
+        border-bottom: dotted $burntOrange 1px;
+    }
+        
+    
+        img {
+            float:left;
+            margin-right: 10px;
+        }
+}
+
+.head {
+    margin:0;
+    padding:0;
+    color: $teal;
+    font-size: 2rem;
+    #typography & {
+        color: $burntOrange;
+    }
+}
+
+// sass example:
+//.head 
+//    margin: 0
+//    padding: 0
+//    color: $teal
+//    font-size: 2rem
+//    #typography & 
+//        color: $burntOrange
+
