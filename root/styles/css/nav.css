@@ -1,0 +1,85 @@
+                                 .navbar {
+                                 background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+                                 border-radius: 6px;
+                                 box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+                                 padding: 0 10px;
+                                 position: relative;
+                             }
+                             
+                             .navmenu {
+                                 display: inline-block;
+                                 padding: 5px 10px;
+                                 height: 35px;
+                                 border-left: solid 1px green;
+                                 font-size: 1.25em;
+                             }
+                             
+                             .navmenu a {
+                                 vertical-align: middle;
+                                 margin: 8px 8px;
+                             }
+                             
+                             .navmenu:hover {
+                                 background: -webkit-gradient(linear, center top, center bottom, from(#ededed), to(#fff));
+                                 border-radius: 12px;
+                                 box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+                             }
+                             
+                             .navMenuMargin {
+                                 max-width: 878px;
+                                 margin: -20px auto 20px;
+                             }
+                             
+                             .dropbtn {
+                                 visibility: hidden;
+                                 position: absolute;
+                                 float: left;
+                             }
+                             
+                             @media screen and (max-width:880px) {
+                                 .dropdown {
+                                     position: relative;
+                                     display: inline-block;
+                                 }
+                                 .dropbtn {
+                                     visibility: visible;
+                                     color: darkgreen;
+                                     margin: -460px 20px;
+                                     position: relative;
+                                     float: left;
+                                     padding: 16px;
+                                     font-size: 16px;
+                                     border: none;
+                                     cursor: pointer;
+                                 }
+                                 .dropdown-content {
+                                     display: none;
+                                     position: absolute;
+                                     min-width: 230px;
+                                     z-index: 0;
+                                     margin: -460px 20px;
+                                     border: none;
+                                 }
+                                 .dropdown-content li {
+                                     padding: 5px 5px;
+                                     text-decoration: none;
+                                     display: block;
+                                 }
+                                 .dropdown:hover .dropdown-content {
+                                     display: block;
+                                 }
+                                 .navbar {
+                                     border-radius: 4px;
+                                     margin-top: 0px;
+                                     margin-bottom: -40px;
+                                     border-style: none;
+                                 }
+                                 .footer {
+                                     visibility: hidden;
+                                 }
+                                 .navmenu {
+                                     border-left: none;
+                                 }
+                                 .navMenuMargin {
+                                     margin-top: 0px;
+                                 }
