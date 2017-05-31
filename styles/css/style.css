@@ -448,7 +448,6 @@ END BUTTONS
         ul,
         ol {
             padding: 0;
-            margin: 0 0 20px 25px;
         }
         
         li {
@@ -559,7 +558,6 @@ END BUTTONS
         
         .lgImageHeaders {
             color: #fff0a5;
-            margin: 20px 0;
             width: 100%;
             display: table;
         }
@@ -567,7 +565,7 @@ END BUTTONS
         .lgImageHeaders .container {
             display: table-cell;
             vertical-align: bottom;
-            padding-bottom: 20px;
+            padding-bottom: 4em;
         }
         
         #framework {
@@ -598,7 +596,7 @@ END BUTTONS
             background-repeat: no-repeat;
             background-position: center center;
             //background-size: cover;
-            height: 450px;
+            height: 40em;
         }
         
         .boxInfo {
@@ -607,4 +605,8 @@ END BUTTONS
             border-radius: 0;
             background-color: #FFF;
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .12);
+        }
+        
+        footer {
+            text-align: center;
         }
