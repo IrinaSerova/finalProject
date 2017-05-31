@@ -602,9 +602,13 @@ END BUTTONS
         .boxInfo {
             padding: 15px;
             margin: 20px;
-            border-radius: 0;
+            border-radius: 5px;
             background-color: #FFF;
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .12);
+        }
+        
+        #content ol {
+            padding: 0 20px;
         }
         
         footer {
@@ -629,4 +633,126 @@ END BUTTONS
         }
         /*---------------------------------
 	END COUNTER
+-----------------------------------*/
+        /*---------------------------------
+	TABS
+-----------------------------------*/
+        
+        dl.tabs,
+        dl.tabs dt,
+        dl.tabs dd {
+            margin: 0;
+            padding: 0;
+        }
+        
+        dl.tabs {
+            padding: 1em;
+        }
+        
+        dl.tabs dt {
+            display: inline-block;
+            background-color: #fff;
+            color: #333;
+            padding: .5em 1em;
+            margin: 0 .01em 0 0;
+            border-radius: 5px 5px 0 0;
+            -webkit-box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.4);
+        }
+        
+        dl.tabs dt.active {
+            background-color: #D4EAE8;
+            border: 1px solid #999;
+            border-bottom: 2px solid #fff;
+        }
+        
+        dl.tabs dt:hover {
+            cursor: pointer;
+        }
+        
+        dl.tabs #content {
+            padding: 1em;
+            background-color: #D4EAE8;
+            margin-top: -1px;
+            border-radius: 0 5px 5px 5px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .12);
+        }
+        /*---------------------------------
+	Accordion
+-----------------------------------*/
+        
+        .accordionItem {
+            float: left;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .accordionItemHeading {
+            cursor: pointer;
+            margin: 0px 0px 10px 0px;
+            padding: 10px;
+            background: #42AB9E;
+            color: #fff;
+            width: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        .close .accordionItemContent {
+            height: 0px;
+            transition: height 1s ease-out;
+            -webkit-transform: scaleY(0);
+            -o-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            float: left;
+            display: block;
+        }
+        
+        .open .accordionItemContent {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+            display: block;
+            -webkit-transform: scaleY(1);
+            -o-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+            transform: scaleY(1);
+            -webkit-transform-origin: top;
+            -o-transform-origin: top;
+            -ms-transform-origin: top;
+            transform-origin: top;
+            -webkit-transition: -webkit-transform 0.4s ease-out;
+            -o-transition: -o-transform 0.4s ease;
+            -ms-transition: -ms-transform 0.4s ease;
+            transition: transform 0.4s ease;
+            box-sizing: border-box;
+        }
+        
+        .open .accordionItemHeading {
+            margin: 0px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -webkit-border-bottom-right-radius: 0px;
+            -webkit-border-bottom-left-radius: 0px;
+            -moz-border-radius-bottomright: 0px;
+            -moz-border-radius-bottomleft: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            background-color: #D4EAE8;
+            color: #7f8c8d;
+        }
+        /*---------------------------------
+	End Accordion
 -----------------------------------*/
