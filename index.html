@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="JustWF is a set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to help developers to gain the upper hand in the web projects." />
     <meta name="copyright" content="Ruslan, Alexandr and Irina justWF.com All Rights Reserved" />
     <link rel="stylesheet" href="styles/css/font-awesome.min.css">
@@ -10,57 +12,59 @@
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="stylesheet" href="styles/css/nav.css">
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <!--<script src="scripts/nav.js" type="text/javascript"></script>-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
+
     <header>
-      <nav>
-    <div class="content fix">
-        <h1>
+        <nav>
+            <div class="content fix">
+                <h1>
       <a href="index.html">JustWF</a>
     </h1>
 
-        <input type="checkbox" id="open-menu" />
-        <label for="open-menu" class="label-hamburger"></label>
-        <ul class="header-nav">
-            <li>
-                <a href="#intro" class="link-menu"><i class="fa fa-info-circle" aria-hidden="true"></i> Intro</a>
-            </li>
-            <li class="drop-down">
-                <a href="#typography" class="link-menu"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
-                <ul class="menu-drop">
+                <input type="checkbox" id="open-menu" />
+                <label for="open-menu" class="label-hamburger"></label>
+                <ul class="header-nav">
                     <li>
-                        <a href="#typography" class="link-menu">Typography</a>
+                        <a href="#intro" class="link-menu"><i class="fa fa-info-circle" aria-hidden="true"></i> Intro</a>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#typography" class="link-menu"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
+                        <ul class="menu-drop">
+                            <li>
+                                <a href="#typography" class="link-menu">Typography</a>
+                            </li>
+                            <li>
+                                <a href="#buttons" class="link-menu"> Buttons</a>
+                            </li>
+                            <li>
+                                <a href="#lists" class="link-menu"> Lists</a>
+                            </li>
+                            <li>
+                                <a href="#media" class="link-menu"> Media</a>
+                            </li>
+                            <li>
+                                <a href="#tables" class="link-menu"> Tables</a>
+                            </li>
+                            <li>
+                                <a href="#forms" class="link-menu"> Forms</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#buttons" class="link-menu"> Buttons</a>
+                        <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a>
                     </li>
                     <li>
-                        <a href="#lists" class="link-menu"> Lists</a>
+                        <a href="#" class="link-menu">Demo</a>
                     </li>
-                    <li>
-                        <a href="#media" class="link-menu"> Media</a>
-                    </li>
-                    <li>
-                        <a href="#tables" class="link-menu"> Tables</a>
-                    </li>
-                    <li>
-                        <a href="#forms" class="link-menu"> Forms</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="link-menu">Demo</a>
-            </li>
 
-        </ul>
-    </div>
-</nav>
+                </ul>
+            </div>
+        </nav>
 
         <section class="justWF lgImageHeaders" id="framework">
 
@@ -422,10 +426,34 @@
 
     </section>
 
+    <section id="js">
+        <div class="container">
+
+
+            <h1>Counter</h1>
+            <p>Happy Clients</p>
+
+            <div class="counter" data-count="1960">1900</div>
+            <p>Awesome Projects</p>
+            <div class="counter" data-count="2100">1900</div>
+            <p>Positive Testimonials</p>
+            <div class="counter" data-count="2800">1900</div>
+        </div>
+
+
+
+    </section>
+
     <footer>
         <p> &copy; 2017 JustWF</p>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="scripts/main.js" type="text/javascript"></script>
 
 </body>
 

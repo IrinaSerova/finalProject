@@ -610,3 +610,23 @@ END BUTTONS
         footer {
             text-align: center;
         }
+        /*---------------------------------
+	COUNTER
+-----------------------------------*/
+        
+        .counter {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 3rem;
+            color: #fff;
+            width: 200px;
+            height: 100px;
+            background: #087E8B;
+            -moz-border-radius: 100px / 50px;
+            -webkit-border-radius: 100px / 50px;
+            border-radius: 100px / 50px;
+        }
+        /*---------------------------------
+	END COUNTER
+-----------------------------------*/
