@@ -39,7 +39,7 @@ nav li {
 .label-hamburger {
     width: 35px;
     height: 21px;
-    display: block;
+    display: none;
     position: absolute;
     top: 50%;
     right: -5%;
@@ -150,6 +150,7 @@ nav li {
         right: 5%;
         opacity: 1;
         visibility: visible;
+        display: block;
     }
     .header-nav {
         width: 100%;
