@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700,700i|Michroma');
+@import url('https://fonts.googleapis.com/css?family=Lato::300,300i,400,400i,700,700i|Michroma');
 html {
 	font-size: 62.5%;
 }
@@ -160,7 +160,6 @@ abbr,
 }
 
 cite,
-i,
 dfn,
 em,
 figcaption {
@@ -593,6 +592,22 @@ END BUTTONS
 /*---------------------------------
 	LISTS
 -----------------------------------*/
+
+li {
+	padding: 5px 0;
+	margin: 0;
+}
+
+ul.list-unstyled {
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+ul.list-unstyled li {
+	padding: 5px 0;
+	margin: 0;
+	list-style-type: none;
+}
 
 
 /*---------------------------------
