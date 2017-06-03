@@ -60,35 +60,80 @@
 							<li> Download JustWF</li>
 							<li>Include jQuery and HTML</li>
 							<li>Copy Elements into your HTML document</li>
+							<li>Wrap everything into class .wrapper</li>
+							<li>Now you can build rows by simply adding class .row to parent element</li>
+							<li>It's time to add columns: JustWF is based on 12 columns structure and 5 break points</li>
+							<li>Columns name:
+								<ul>
+									<li>Desktop: 1169px(dt-1 To dt-12)</li>
+									<li>max-width: 1169px(tl-1 To tl-12)</li>
+									<li>max-width: 1023px (tp-1 To tp-12)</li>
+									<li>max-width: 767px(ml-1 To ml-12)</li>
+									<li>max-width: 667px(mp-1 To mp-12)</li>
+								</ul>
+							</li>
+							<li>We also have support classes to indent the content, such as:
+								<ul>
+									<li>indent-dt-1 To indent-dt-12</li>
+									<li>indent-tl-1 To indent-tl-12</li>
+									<li>indent-tp-1 To indent-tp-12</li>
+									<li>indent-ml-1 To indent-ml-12</li>
+									<li>indent-mp-1 To indent-mp-12</li>
+								</ul>
+							</li>
 						</ol>
 					</dd> <dt><i class="fa fa-code" aria-hidden="true"></i> Code</dt>
 					<dd>
-						<div class="boxInfo">
-
-
-							<code class="snippet"> &lt;link rel=&quot;stylesheet&quot; href=&quot;css/justWF.css&quot; &quot; /&gt; &lt;!-- JustWF --&gt;</code>
-
-
-
-
-
-
-						</div>
+						<div class="boxInfo"> <code class="snippet"> &lt;link rel=&quot;stylesheet&quot; href=&quot;css/justWF.css&quot; &quot; /&gt; &lt;!-- JustWF --&gt;</code> </div>
 					</dd>
 				</dl>
 			</div>
 		</section>
-
-
-
-
-
-
 		<section id="grid" class="row">
 			<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 				<h1>Grid</h1>
-				<p>JustWF provides a simple .container (WE WILL ADD .CLASS FROM ALEXANR GRID) container that automatically adjusts its height based on the viewport dimensions:</p>
+				<div class="row">
+					<div class="dt-2 tl-2 tp-2 ml-2 mp-2 grayRed"> 2</div>
+					<div class="dt-10 tl-10 tp-10 ml-10 mp-10 grayRed">10</div>
+				</div>
+				<div class="row">
+					<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+					<div class="dt-9 tl-9 tp-9 ml-9 mp-9 grayRed">9</div>
+				</div>
+				<div class="row">
+					<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+					<div class="dt-8 tl-8 tp-8 ml-8 mp-8 grayRed">8</div>
+				</div>
+				<div class="row">
+					<div class="dt-5 tl-5 tp-5 ml-5 mp-5 grayRed">5</div>
+					<div class="dt-7 tl-7 tp-7 ml-7 mp-7 grayRed">7</div>
+				</div>
+				<div class="row">
+					<div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
+					<div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
+				</div>
+				<div class="row">
+					<div class="dt-12 tl-12 tp-12 ml-12 mp-12 grayRed">12</div>
+				</div>
+				<div class="row">
+					<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+					<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+					<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+				</div>
+				<div class="row">
+					<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+					<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+					<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+					<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+				</div>
 			</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+
+
+
+
+
+
+
 		<section id="typography" class="row">
 			<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 				<h2>Typography</h2>
