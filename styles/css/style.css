@@ -193,7 +193,9 @@ small {
 	font-size: 75%;
 }
 
+
 /*tranformation styles*/
+
 .uppercase {
 	text-transform: uppercase;
 }
@@ -232,6 +234,19 @@ code {
 	border-radius: 3px;
 	color: #4284ab;
 	background: #f8f8f8;
+}
+
+
+/* definitions styles*/
+
+dd {
+	margin-left: 9px;
+	display: block;
+	-webkit-margin-start: 40px;
+}
+
+dt {
+	font-weight: 700;
 }
 
 
@@ -578,27 +593,6 @@ END BUTTONS
 /*---------------------------------
 	LISTS
 -----------------------------------*/
-
-ul,
-ol {
-	padding: 0;
-}
-
-li {
-	padding: 5px 0;
-	margin: 0;
-}
-
-ul.list-unstyled {
-	padding: 0;
-	margin: 0 0 20px 0;
-}
-
-ul.list-unstyled li {
-	padding: 5px 0;
-	margin: 0;
-	list-style-type: none;
-}
 
 
 /*---------------------------------
