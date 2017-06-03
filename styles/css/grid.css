@@ -1632,3 +1632,11 @@ body {
     bottom: 0;
     text-align: center;
 }
+
+
+/*TEMPORARY COLOR FOR GRID*/
+
+.grayRed {
+    background-color: rgba(128, 128, 128, 0.18);
+    border: 1px solid red;
+}
