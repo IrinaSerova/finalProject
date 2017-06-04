@@ -251,7 +251,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
+	font-family: Lato, sans-serif;
 	/* 1 */
 	font-size: 100%;
 	/* 1 */
@@ -348,13 +348,13 @@ fieldset {
 legend {
 	box-sizing: border-box;
 	/* 1 */
-	color: inherit;
+	/*	color: inherit;*/
 	/* 2 */
 	display: table;
 	/* 1 */
 	max-width: 100%;
 	/* 1 */
-	padding: 0;
+	/*	padding: 0;*/
 	/* 3 */
 	white-space: normal;
 	/* 1 */

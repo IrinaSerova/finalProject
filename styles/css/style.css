@@ -64,6 +64,14 @@ body {
 	height: 40em;
 }
 
+.justWFDemo {
+	background: linear-gradient(to bottom, transparent, rgba(66, 171, 158, 0.3)), url("../../images/students.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 40em;
+}
+
 #info {
 	padding: 5em;
 }
@@ -609,6 +617,10 @@ ul.list-unstyled li {
 	list-style-type: none;
 }
 
+ul.header-nav {
+	padding: 0;
+}
+
 
 /*---------------------------------
 	END LISTS
@@ -618,48 +630,6 @@ ul.list-unstyled li {
 /*---------------------------------
 	TABLES
 -----------------------------------*/
-
-table {
-	width: 100%;
-	max-width: 100%;
-	margin-bottom: 1.35rem;
-	border-collapse: collapse;
-	border: none;
-	background-color: transparent;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-th,
-td {
-	padding: 8px;
-	border-top: 1px solid #d8d8d8;
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 1.6;
-	text-align: left;
-	vertical-align: top
-}
-
-th {
-	font-family: "Lato", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	font-weight: normal;
-	text-align: left
-}
-
-.tableStyle2 th,
-.tableStyle2 td {
-	padding: 4px;
-	font-size: 12px;
-	font-size: 1.2rem
-}
-
-.tableStripe tbody tr:nth-child(odd) td,
-.tableStripe tbody tr:nth-child(odd) th {
-	background-color: #f4f4f4;
-	color: #111
-}
 
 
 /*---------------------------------
@@ -857,4 +827,314 @@ dl.tabs #content {
 
 /*---------------------------------
 	End Accordion
+-----------------------------------*/
+
+
+/*---------------------------------
+	Vertical Tabs
+-----------------------------------*/
+
+.tabsAside .menu div {
+	padding: 15px 20px 15px 40px;
+	margin-bottom: 10px;
+	color: #42AB9E;
+	background: #A1D2CE;
+	font-size: 2rem;
+	cursor: pointer;
+	position: relative;
+	vertical-align: middle;
+	border-radius: 5px;
+	-webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tabsAside .menu div:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.tabsAside .menu div span.light {
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	top: 24px;
+	left: 15px;
+	background-color: #42AB9E;
+	border-radius: 100%;
+	-webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tabsAside .menu div.active span.light {
+	background-color: #087E8B;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	top: 0;
+	border-radius: 0;
+}
+
+.tabsAside .menu div.active {
+	color: #087E8B;
+	padding: 15px 20px 15px 20px;
+}
+
+ul.tabsAside {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.tabsAside li {
+	opacity: 0;
+	-webkit-transform: translateX(50px);
+	transform: translateX(50px);
+	position: absolute;
+	list-style: none;
+	-webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.tabsAside li.active {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+	z-index: 2;
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+/*---------------------------------
+	End Vertical Tabs
+-----------------------------------*/
+
+
+/*---------------------------------
+	TABLES
+-----------------------------------*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+table,
+th,
+td {
+	border: none;
+}
+
+table {
+	width: 100%;
+	display: table;
+}
+
+table.bordered > thead > tr,
+table.bordered > tbody > tr {
+	border-bottom: 1px solid #d0d0d0;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+table.striped > tbody > tr > td {
+	border-radius: 0;
+}
+
+table.highlight > tbody > tr {
+	transition: background-color .25s ease;
+}
+
+table.highlight > tbody > tr:hover {
+	background-color: #f2f2f2;
+}
+
+table.centered thead tr th,
+table.centered tbody tr td {
+	text-align: center;
+}
+
+thead {
+	border-bottom: 1px solid #d0d0d0;
+}
+
+td,
+th {
+	padding: 15px 5px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+@media only screen and (max-width: 567px) {
+	table.responsive-table {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		display: block;
+		position: relative;
+		/* sort out borders */
+	}
+	table.responsive-table td:empty:before {
+		content: '\00a0';
+	}
+	table.responsive-table th,
+	table.responsive-table td {
+		margin: 0;
+		vertical-align: top;
+	}
+	table.responsive-table th {
+		text-align: left;
+	}
+	table.responsive-table thead {
+		display: block;
+		float: left;
+	}
+	table.responsive-table thead tr {
+		display: block;
+		padding: 0 10px 0 0;
+	}
+	table.responsive-table thead tr th::before {
+		content: "\00a0";
+	}
+	table.responsive-table tbody {
+		display: block;
+		width: auto;
+		position: relative;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+	table.responsive-table tbody tr {
+		display: inline-block;
+		vertical-align: top;
+	}
+	table.responsive-table th {
+		display: block;
+		text-align: right;
+	}
+	table.responsive-table td {
+		display: block;
+		min-height: 1.25em;
+		text-align: left;
+	}
+	table.responsive-table tr {
+		padding: 0 10px;
+	}
+	table.responsive-table thead {
+		border: 0;
+		border-right: 1px solid #d0d0d0;
+	}
+	table.responsive-table.bordered th {
+		border-bottom: 0;
+		border-left: 0;
+	}
+	table.responsive-table.bordered td {
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
+	}
+	table.responsive-table.bordered tr {
+		border: 0;
+	}
+	table.responsive-table.bordered tbody tr {
+		border-right: 1px solid #d0d0d0;
+	}
+}
+
+
+/*---------------------------------
+	END TABLES
+-----------------------------------*/
+
+
+/*---------------------------------
+	FORM
+-----------------------------------*/
+
+fieldset {
+	border: none;
+	border-radius: 5px;
+	padding: 1.5em .75em .25em;
+	background: #A1D2CE;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .16), 0 0 2px 0 rgba(0, 0, 0, .4);
+}
+
+legend {
+	display: block;
+	padding: 2em .5em .2em;
+	font-size: 1.25em;
+	border-bottom: solid 1px #fff;
+	text-align: center;
+	width: 100%;
+	color: #ab424f;
+	font-weight: 400;
+}
+
+input,
+textarea {
+	padding: 5px;
+	width: 55%;
+	border: solid 1px #999;
+	border-radius: 5px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	width: auto;
+}
+
+.altLabel label {
+	text-align: left;
+	width: auto;
+}
+
+#contactForm ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#contactForm li {
+	padding-bottom: .75em;
+}
+
+#comments .radioSet li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+textarea {
+	width: 95%;
+	font-family: Arial, sans-serif;
+	min-height: 5em;
+	margin-top: -2em;
+}
+
+label {
+	width: 30%;
+	text-align: right;
+	display: inline-block;
+}
+
+button[type=submit] {
+	margin: 1em auto 0;
+}
+
+button[type=submit]:hover {
+	background-color: #333;
+}
+
+
+/*---------------------------------
+	END FORMS
 -----------------------------------*/

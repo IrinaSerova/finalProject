@@ -141,7 +141,7 @@ nav li {
 	display: block;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
 	#open-menu:checked ~ .label-hamburger {
 		height: 30px;
 	}

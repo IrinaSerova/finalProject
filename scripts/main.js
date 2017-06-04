@@ -74,9 +74,29 @@ jQuery(document).ready(function ($) {
 
 	// end accordion
 
-	// copy button
 
 
 
-	// end copy button
+
+	// vertical tabs 
+
+	$(document).on("click", ".tabsAside .menu div", function () {
+		var numberIndex = $(this).index();
+
+		if (!$(this).is("active")) {
+			$(".tabsAside .menu div").removeClass("active");
+			$(".tabsAside ul li").removeClass("active");
+
+			$(this).addClass("active");
+			$(".tabsAside ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+			var listItemHeight = $(".tabsAside ul")
+				.find("li:eq(" + numberIndex + ")")
+				.innerHeight();
+			$(".tabsAside ul").height(listItemHeight + "px");
+		}
+	});
+
+
+	// vertical tabs
 });
