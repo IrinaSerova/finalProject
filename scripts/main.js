@@ -1,6 +1,26 @@
 jQuery(document).ready(function ($) {
 
+    var form = "<a href='#'><span id='openForm'>Login</span></a>";
+        form += "<form action='#' method='get'>";
+        form += "<p><label for='userName'>User Name:</label>";
+        form += "<input type='text' name='userName' id='userName' /></p>";
+        form += "<p><label for='password'>Password:</label>";
+        form += "<input type='password' name='password' id='password' /></p>";
+        form += "<p class='button'><input type='submit' name='submit' id='submit' value='Submit' /></p>";
+        form += "</form>";
+        
+        $('#login').prepend(form);
 
+                  $('#openForm').click(function(evt){
+                  evt.preventDefault();
+                  if($('#login form').is(':hidden')) {
+                      $('#login form').fadeIn(500);
+                      $(this).addClass('close');
+                  } else {
+                      $('#login form').slideUp(500);
+                      $(this).removeClass('close');
+                  }
+              });// end click*/
 	// tabs
 
 

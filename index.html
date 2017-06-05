@@ -40,8 +40,16 @@
 					<li> <a href="#forms" class="link-menu"> Forms</a> </li>
 				</ul>
 			</li>
-			<li> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a> </li>
-			<li> <a href="demo.html" class="link-menu"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
+			<li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a> 
+			<ul class="menu-drop">
+					<li> <a href="#galleryJS" class="link-menu">Gallery</a> </li>
+					<li> <a href="#accordionJS" class="link-menu"> Accordion</a> </li>
+					<li> <a href="#tabsJS" class="link-menu"> Tabs</a> </li>
+					<li> <a href="#loginJS" class="link-menu"> Login</a> </li>
+					
+				</ul>
+			</li>
+			<li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
 		</ul>
 	</nav>
 
@@ -267,6 +275,8 @@
 								<p>
 									<a href="">Inline Link</a>
 								</p>
+								<address>
+                        mail to <a href="mailto:webmaster@example.com">...this address...</a></address>
 							</div>
 							<div class="dt-7 tl-7 tp-7 ml-7 mp-12">
 								<p><code>&lt;abbr&gt;</code></p>
@@ -277,6 +287,10 @@
 								<p><code>&lt;strike&gt;</code></p>
 								<p><code>&lt;strong&gt;</code></p>
 								<p><code>&lt;a href=""&gt;Link&lt;/a&gt;</code></p>
+								
+            
+            
+								<p><code>&lt;address&gt;</code></p>
 							</div>
 						</div>
 
@@ -332,17 +346,20 @@
 						<div class="row">
 							<div class="dt-6 tl-6 tp-6 ml-6 mp-12">
 								<!-- Unordered list -->
+								<p><code>&lt;ul&gt;</code></p>
 								<ul>
-									<li>Unordered list item 1</li>
+									<li>Unordered list item 1<ul><li>Unordered list item 1.1</li><li>Unordered list item 1.2</li></ul></li>
 									<li>Unordered list item 2</li>
+									<li>Unrdered list item 3</li>
 								</ul>
 							</div>
 							<div class="dt-6 tl-6 tp-6 ml-6 mp-12">
-								<!-- Unordered list -->
 								<!-- Ordered list -->
+								<p><code>&lt;ol&gt;</code></p>
 								<ol>
-									<li>Ordered list item 1</li>
+									<li>Ordered list item 1<ol><li>Unordered list item 1.1</li><li>Unordered list item 1.2</li></ol></li>
 									<li>Ordered list item 2</li>
+									<li>Ordered list item 3</li>
 								</ol>
 
 							</div>
@@ -353,6 +370,38 @@
 
 					</div>
 				</div>
+				
+						<div class="accordionItem close">
+					<h2 class="accordionItemHeading">Alignments</h2>
+					<div class="accordionItemContent">
+					<div class="align-left">
+                        <p>Text aligned left:</p>
+                        <code>.align-left</code>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe accusamus, delectus accusantium temporibus ea nihil asperiores laboriosam labore facilis, ipsam est eligendi, quae odit quas blanditiis maiores, hic commodi.</p></div>
+                    <div class="align-center">
+                        <p>Text aligned center:</p>
+                        <code>.align-center</code>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis, suscipit illo id culpa odit recusandae eum non ad quisquam corporis, dolores fugiat nemo deserunt? Magni deserunt iste quo rem.</p></div>
+                    <div class="align-right">
+                        <p>Text aligned right:</p>
+                        <code>.align-right</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
+                      
+                    <div class="align-justify">
+                        <p>Text aligned justify style:</p>
+                        <code>.align-justify</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
+                
+                    <div class="align-inherit">
+                        <p>Text aligned inherit style:</p>
+                        <code>.align-inherit</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
+                
+                </div>
+
+
+
+
+			</div>
+			
+			
 
 
 
@@ -709,7 +758,7 @@
 					<ul>
 						<li>
 							<label for="name"><i class="fa fa-male"></i> Name</label>
-							<input type="text" id="name" name="name" title="Please enter you name" placeholder="Last, First" autofocus required /> <span class="require">*</span>
+							<input type="text" id="name" name="name" title="Please enter you name" placeholder="Last, First" /> <span class="require">*</span>
 						</li>
 
 						<li>
@@ -821,7 +870,7 @@
 			<h2>Images</h2>
 
 			<h4>Responsive Images</h4>
-			<p>To make images resize responsively to page width, you can add the class <code>responsive-img</code> to your image tag. </p>
+			<p>To make images resize responsively to page width, you can add the class <code>imageResponsive</code> to your image tag. </p>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
 				<h4>Circle Images</h4>
 				<img src="http://placehold.it/90x90" class="imgCircle">
@@ -846,23 +895,153 @@
 
 	<section id="js" class="row">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+		<h1>Javascript</h1>
+		<h3>Gallery</h3>
 			<h3>Click an image for larger version</h3>
-			<div id="gallery">
-				<a href="https://placeimg.com/640/480/nature"><img src="https://unsplash.it/100/70" alt="sea turtle" /></a>
-				<a href="https://unsplash.it/300/200"><img src="https://unsplash.it/100/70" alt="horn shark" /></a>
-				<a href="https://unsplash.it/300/202"><img src="https://unsplash.it/100/70" alt="sea lion" /></a>
-				<a href="https://unsplash.it/300/203"><img src="https://unsplash.it/100/70" alt="tope shark" /></a>
-				<a href="https://unsplash.it/300/204"><img src="https://unsplash.it/100/70" alt="harbor seal" /></a>
+			<div class="dt-6 tl-6 tp-6  ml-12">
+			<div id="gallery" class="imageCenter">
+				<a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
+				<a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
+				<a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
+				<a href="images/imagesBig/image4B.jpg"><img src="images/smallImages/image4S.jpg" alt="image4" /></a>
+				<a href="images/imagesBig/image5B.jpg"><img src="images/smallImages/image5S.jpg" alt="image5" /></a>
+				<a href="images/imagesBig/image6B.jpg"><img src="images/smallImages/image6S.jpg" alt="image6" /></a>
 			</div>
-			<div id="bigPic"></div>
+            </div>
+            <div class="dt-6 tl-6 tp-6 ml-12">
+			<div id="bigPic" class="imageCenter"></div>
+		</div>
+        </div>
+        <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> 
+	</section>
+	
+	<!--  ACCORDION SECTION-->
+	<section id="accordionJS" class="row">
+		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+			<h2>Accordion</h2>
+
+			<div class="accordionItem open">
+				<h2 class="accordionItemHeading">Heading</h2>
+				<div class="accordionItemContent">
+
+
+					<p>Open Content</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+
+				</div>
+			</div>
+<div class="accordionItem close">
+				<h2 class="accordionItemHeading">Heading</h2>
+				<div class="accordionItemContent">
+
+
+					<p>Close Content</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+
+				</div>
+			</div>
+			
+			<div class="accordionItem close">
+				<h2 class="accordionItemHeading">Heading</h2>
+				<div class="accordionItemContent">
+
+
+					<p>Close Content</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+
+				</div>
+			</div>
+		
+					
+		</div>
+
+<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> 
+
+	</section>
+
+	<!--  END ACCORDION SECTION  -->
+	
+		<!--SECTION TABS-->
+
+
+
+
+	<!--SECTION TABS-->
+
+
+	<section id="tabsJS" class="row tabsAside">
+		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+			<h1>Tabs</h1>
+			<div class="dt-4 tl-4 tp-4 ml-4 mp-12">
+				<div class="menu">
+					<div class="active"><span class="light"></span><span>Header 1</span></div>
+					<div><span class="light"></span><span>Header 2</span></div>
+					<div><span class="light"></span><span>Header 3</span></div>
+
+
+
+
+				</div>
+			</div>
+			<div class="dt-8 tl-8 tp-8 ml-8 mp-12">
+				<ul class="tabsAside">
+					<li class="active">
+						<div>
+							<h5>
+        
+        Content 1
+      </h5>
+      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Omnis nihil nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore laborum eos accusamus vel! Possimus, porro.</span></p>
+
+
+
+						</div>
+					</li>
+					<li>
+						<div>
+						<h5>
+        
+        Content 2
+      </h5>
+      <p><span>Nostrum quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Omnis nihil nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore </span></p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h5>
+        
+        Content 3
+      </h5>
+      <p><span>Lorem quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore </span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
 		</div>
 	</section>
+
+
+	<!--END SECTION TABS-->
+	<!--LOGIN-->
+		<section id="loginJS" class="row">
+		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+			<h1>Login</h1>
+	 <div id="login">
+           
+           </div>
+            </div>
+    </section>
+           <!--END LOGIN-->
+
+
+	<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
 	<footer>
 		<p> &copy; 2017 JustWF</p>
 	</footer>
 
 
-	<img src="http://placehold.it/90x90" class="imgThumbnail">
+	
 
 
 </body>
