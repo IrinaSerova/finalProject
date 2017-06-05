@@ -1,35 +1,6 @@
 jQuery(document).ready(function ($) {
 
-	// counter
-	$('.counter').each(function () {
-		var $this = $(this),
-			countTo = $this.attr('data-count');
 
-		$({
-			countNum: $this.text()
-		}).animate({
-				countNum: countTo
-			},
-
-			{
-
-				duration: 8000,
-				easing: 'linear',
-				step: function () {
-					$this.text(Math.floor(this.countNum));
-				},
-				complete: function () {
-					$this.text(this.countNum);
-					//alert('finished');
-				}
-
-			});
-
-
-
-	});
-
-	// end counter
 	// tabs
 
 
@@ -98,45 +69,47 @@ jQuery(document).ready(function ($) {
 	});
 
 
-	// vertical tabs
+	// end vertical tabs
 
-	// forms
+	// gallery
+	$('#gallery img').each(function () {
+		// preload images
+		var imgFile = $(this).attr('src');
+		var preloadImg = new Image();
+		var imgExp = /sg.jpg/g;
+		preloadImg.src = imgFile.replace(imgExp, 's.jpg');
+		//ends preload images portion
 
-	function simpleSelect() {
-		"use strict";
-		var selectHolder,
-			selectClass;
-		//Setup
-		$('select').each(function () {
-			selectClass = $(this).attr('class');
-			selectHolder = '<dl class="simpleSelect ' + selectClass + '">';
-			selectHolder += '<dt>' + $('option', this).first().text() + '</dt><dd><ul>';
-			$('option', this).each(function () {
-				selectHolder += '<li data="' + $(this).val() + '">' + $(this).text() + '</li>';
-			});
-			selectHolder += '</ul></dd></dl>';
-			$(this).after(selectHolder);
-			$('.' + selectClass).wrapAll('<div class="selectContainer"></div>');
+		// image swap
+		$(this).hover(
+			function () { // mouse enter function
+				$(this).attr('src', preloadImg.src);
+			},
+			function () { // mouse leave function
+				$(this).attr('src', imgFile);
+			}); // end hover
+	}); //ends each
+
+	// gallery - large image display
+	$('#gallery a').click(function (evt) {
+		evt.preventDefault();
+		var imgPath = $(this).attr('href');
+		var oldImg = $('#bigPic img'); //get reference to the old image
+		var newImg = $('<img src="' + imgPath + '" />');
+
+		newImg.hide();
+		$('#bigPic').prepend(newImg);
+		newImg.fadeIn(1200);
+
+		oldImg.fadeOut(1000, function () {
+			$(this).remove();
 		});
 
-		//Clicks
-		$('.simpleSelect dd ul li').on("click", function () {
-			$(this).parents().eq(3).find('select').val($(this).attr('data'));
-		});
+	}); // end click function
 
-		$('.simpleSelect dt').on("click", function () {
-			if ($(this).next('dd').hasClass("open")) {
-				$(this).removeClass("open").next('dd').removeClass("open");
-			} else {
-				$(this).addClass("open").next('dd').addClass("open");
-			}
-		});
+	$('#gallery img:first').click();
+	//end gallery
 
-		$('.simpleSelect dd ul li').on("click", function () {
-			$(this).parents().eq(1).removeClass("open");
-			$(this).parents().eq(2).find('dt').removeClass("open");
-			$(this).parents().eq(4).find('dt').text($(this).text());
-		});
-	}
+
 
 });

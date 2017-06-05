@@ -1172,3 +1172,39 @@ button[type=submit]:hover {
 /*---------------------------------
 	END FORMS
 -----------------------------------*/
+
+
+/*---------------------------------
+	GALLERY
+-----------------------------------*/
+
+#gallery {
+	width: 260px;
+	margin-right: 10px;
+	float: left;
+}
+
+#gallery img {
+	display: inline-block;
+	margin: 10px;
+	padding: 2px;
+	border: solid 1px #333;
+}
+
+#bigPic img {
+	border: solid 1px #333;
+	padding: 4px;
+	margin: 10px;
+	position: absolute;
+}
+
+.content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*---------------------------------
+	END GALLERY
+-----------------------------------*/
