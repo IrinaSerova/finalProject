@@ -105,12 +105,21 @@ nav li {
 	position: relative;
 }
 
-.menu-drop {
+.menu-drop,
+.menu-dropLogin {
 	padding: 0;
 }
 
 .drop-down:hover .menu-drop,
 .drop-down:focus .menu-drop {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.drop-down:hover .menu-dropLogin,
+.drop-down:focus .menu-dropLogin {
 	opacity: 1;
 	visibility: visible;
 	-webkit-transform: translateY(0);
@@ -132,14 +141,133 @@ nav li {
 	transition: 550ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+.menu-dropLogin {
+	/*	white-space: nowrap;*/
+	position: absolute;
+	min-width: 500%;
+	opacity: 0;
+	visibility: hidden;
+	top: 100%;
+	right: 0;
+	background-color: #86C9C1;
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+	-webkit-transition: 550ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: 550ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
 .drop-down:last-child .menu-drop {
 	right: 0;
 	left: inherit;
 }
 
-.menu-drop li {
+.menu-drop li,
+.menu-dropLogin li {
 	display: block;
 }
+
+
+/*login*/
+
+.wrap-input {
+	padding: 22px 0 0 20px;
+	position: relative;
+	display: inline-block;
+}
+
+.wrap-input input:invalid + label {
+	opacity: 0;
+}
+
+.wrap-input input:valid + label {
+	opacity: 1;
+	top: 5px;
+}
+
+.wrap-input input:focus {
+	outline: none;
+}
+
+.wrap-input input:focus + label {
+	color: #ccc;
+}
+
+.wrap-input label {
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	color: #fff;
+	font-size: 0.75rem;
+}
+
+nav form input[type="text"],
+nav form input[type="password"] {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #666;
+	color: #984447;
+	font-size: 1.0rem;
+	padding: 13px 10px 10px 10px;
+	width: 100%;
+}
+
+nav form input[type="text"]:focus,
+nav form input[type="password"]:focus {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	outline: 0;
+}
+
+.btnLogin:hover {
+	background: #087E8B;
+	color: #fff;
+}
+
+.btnLogin {
+	background: #984447;
+	border: 0;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.0rem;
+	height: 42px;
+	letter-spacing: 0.05em;
+	margin-left: 20px;
+	padding: 13px 40px 10px 40px;
+	text-transform: uppercase;
+}
+
+form .info {
+	clear: both;
+	overflow: hidden;
+}
+
+form .info .forgot,
+form .info .disclaimer {
+	font-size: 1rem;
+	letter-spacing: 0.05em;
+	line-height: 1.0rem;
+	padding: 1%;
+	right: 0;
+}
+
+form .info .disclaimer {
+	color: #666;
+}
+
+form .info .forgot {
+	color: #fff;
+	float: right;
+	text-decoration: none;
+}
+
+form .info .forgot:hover {
+	color: #984447;
+}
+
+
+/*end login*/
 
 @media screen and (max-width: 767px) {
 	#open-menu:checked ~ .label-hamburger {
@@ -174,10 +302,15 @@ nav li {
 	.drop-down:focus .menu-drop {
 		max-height: 1000px;
 	}
+	.drop-down:hover .menu-dropLogin,
+	.drop-down:focus .menu-dropLogin {
+		max-height: 1000px;
+	}
 	.link-menu {
 		padding: 20px 20px;
 	}
-	.menu-drop {
+	.menu-drop,
+	.menu-dropLogin {
 		max-height: 0;
 		position: initial;
 		opacity: 1;
@@ -187,5 +320,13 @@ nav li {
 		-webkit-transition: 550ms ease-in-out;
 		transition: 550ms ease-in-out;
 		overflow: hidden;
+	}
+	.menu-dropLogin {
+		min-width: 100%
+	}
+	.wrap-input {
+		padding: 3px;
+		position: relative;
+		display: block;
 	}
 }

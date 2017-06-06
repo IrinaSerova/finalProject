@@ -14,6 +14,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="scripts/main.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -40,18 +41,45 @@
 					<li> <a href="#forms" class="link-menu"> Forms</a> </li>
 				</ul>
 			</li>
-			<li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a> 
-			<ul class="menu-drop">
+			<li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a>
+				<ul class="menu-drop">
 					<li> <a href="#galleryJS" class="link-menu">Gallery</a> </li>
 					<li> <a href="#accordionJS" class="link-menu"> Accordion</a> </li>
 					<li> <a href="#tabsJS" class="link-menu"> Tabs</a> </li>
-					<li> <a href="#loginJS" class="link-menu"> Login</a> </li>
-					
+					<li> <a href="#barJS" class="link-menu"> Bar</a> </li>
+
 				</ul>
 			</li>
+
 			<li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
+
+			<li class="drop-down"> <a href="#" class="link-menu"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+				<ul class="menu-dropLogin">
+					<form class="form">
+						<div class="wrap-input">
+							<input type="text" id="user" required placeholder="Username or E-mail" />
+							<label>Username or E-mail</label>
+						</div>
+						<div class="wrap-input">
+							<input type="password" id="pass" required placeholder="Password" />
+							<label>Password</label>
+						</div>
+						<button class="btnLogin">Login</button>
+						<div class="info">
+
+							<a href="#" class="forgot">Forgot your password?</a>
+						</div>
+					</form>
+
+
+				</ul>
+			</li>
+
 		</ul>
 	</nav>
+
+
+
 
 	<!--END NAVIGATION-->
 	<!--HEADER-->
@@ -287,9 +315,9 @@
 								<p><code>&lt;strike&gt;</code></p>
 								<p><code>&lt;strong&gt;</code></p>
 								<p><code>&lt;a href=""&gt;Link&lt;/a&gt;</code></p>
-								
-            
-            
+
+
+
 								<p><code>&lt;address&gt;</code></p>
 							</div>
 						</div>
@@ -348,7 +376,12 @@
 								<!-- Unordered list -->
 								<p><code>&lt;ul&gt;</code></p>
 								<ul>
-									<li>Unordered list item 1<ul><li>Unordered list item 1.1</li><li>Unordered list item 1.2</li></ul></li>
+									<li>Unordered list item 1
+										<ul>
+											<li>Unordered list item 1.1</li>
+											<li>Unordered list item 1.2</li>
+										</ul>
+									</li>
 									<li>Unordered list item 2</li>
 									<li>Unrdered list item 3</li>
 								</ul>
@@ -357,7 +390,12 @@
 								<!-- Ordered list -->
 								<p><code>&lt;ol&gt;</code></p>
 								<ol>
-									<li>Ordered list item 1<ol><li>Unordered list item 1.1</li><li>Unordered list item 1.2</li></ol></li>
+									<li>Ordered list item 1
+										<ol>
+											<li>Unordered list item 1.1</li>
+											<li>Unordered list item 1.2</li>
+										</ol>
+									</li>
 									<li>Ordered list item 2</li>
 									<li>Ordered list item 3</li>
 								</ol>
@@ -370,38 +408,46 @@
 
 					</div>
 				</div>
-				
-						<div class="accordionItem close">
+
+				<div class="accordionItem close">
 					<h2 class="accordionItemHeading">Alignments</h2>
 					<div class="accordionItemContent">
-					<div class="align-left">
-                        <p>Text aligned left:</p>
-                        <code>.align-left</code>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe accusamus, delectus accusantium temporibus ea nihil asperiores laboriosam labore facilis, ipsam est eligendi, quae odit quas blanditiis maiores, hic commodi.</p></div>
-                    <div class="align-center">
-                        <p>Text aligned center:</p>
-                        <code>.align-center</code>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis, suscipit illo id culpa odit recusandae eum non ad quisquam corporis, dolores fugiat nemo deserunt? Magni deserunt iste quo rem.</p></div>
-                    <div class="align-right">
-                        <p>Text aligned right:</p>
-                        <code>.align-right</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
-                      
-                    <div class="align-justify">
-                        <p>Text aligned justify style:</p>
-                        <code>.align-justify</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
-                
-                    <div class="align-inherit">
-                        <p>Text aligned inherit style:</p>
-                        <code>.align-inherit</code><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p></div>
-                
-                </div>
+						<div class="align-left">
+							<p>Text aligned left:</p>
+							<code>.align-left</code>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe accusamus, delectus accusantium temporibus ea nihil asperiores laboriosam labore facilis, ipsam est eligendi, quae odit quas blanditiis maiores, hic commodi.</p>
+						</div>
+						<div class="align-center">
+							<p>Text aligned center:</p>
+							<code>.align-center</code>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis, suscipit illo id culpa odit recusandae eum non ad quisquam corporis, dolores fugiat nemo deserunt? Magni deserunt iste quo rem.</p>
+						</div>
+						<div class="align-right">
+							<p>Text aligned right:</p>
+							<code>.align-right</code>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+						</div>
+
+						<div class="align-justify">
+							<p>Text aligned justify style:</p>
+							<code>.align-justify</code>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+						</div>
+
+						<div class="align-inherit">
+							<p>Text aligned inherit style:</p>
+							<code>.align-inherit</code>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+						</div>
+
+					</div>
 
 
 
 
-			</div>
-			
-			
+				</div>
+
+
 
 
 
@@ -469,6 +515,7 @@
 							<button class="orange">.orange</button>
 							<button class="green">.green</button>
 							<button class="red"> .red</button>
+							<button class="sea"> .sea</button>
 						</div>
 					</li>
 					<li>
@@ -841,7 +888,7 @@
 							<textarea id="inquiry" placeholder="Your comment or question:"></textarea>
 						</li>
 					</ul>
-					<button type="submit">Send</button>
+					<button class="sea">Send</button>
 				</fieldset>
 
 
@@ -873,18 +920,18 @@
 			<p>To make images resize responsively to page width, you can add the class <code>imageResponsive</code> to your image tag. </p>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
 				<h4>Circle Images</h4>
-				<img src="http://placehold.it/90x90" class="imgCircle">
+				<img src="images/smallImages/image4S.jpg" class="imgCircle">
 				<p> </p>
 				<p>To shape the image to a circle you can add <code>imgCircle</code> class to your image tag. </p>
 			</div>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
 				<h4>Rounded Corner</h4>
-				<img src="http://placehold.it/90x90" class="imgRounded">
+				<img src="images/smallImages/image5S.jpg" class="imgRounded">
 				<p>To make images resize responsively to page width, you can add the class <code>imgRounded</code> to your image tag. </p>
 			</div>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
 				<h4>Thumbnail</h4>
-				<img src="http://placehold.it/90x90" class="imgThumbnail">
+				<img src="images/smallImages/image6S.jpg" class="imgThumbnail">
 				<p>To make images resize responsively to page width, you can add the class <code>imgThumbnail</code> to your image tag. </p>
 			</div>
 
@@ -895,26 +942,26 @@
 
 	<section id="js" class="row">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-		<h1>Javascript</h1>
-		<h3>Gallery</h3>
+			<h1>Javascript</h1>
+			<h3>Gallery</h3>
 			<h3>Click an image for larger version</h3>
 			<div class="dt-6 tl-6 tp-6  ml-12">
-			<div id="gallery" class="imageCenter">
-				<a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
-				<a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
-				<a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
-				<a href="images/imagesBig/image4B.jpg"><img src="images/smallImages/image4S.jpg" alt="image4" /></a>
-				<a href="images/imagesBig/image5B.jpg"><img src="images/smallImages/image5S.jpg" alt="image5" /></a>
-				<a href="images/imagesBig/image6B.jpg"><img src="images/smallImages/image6S.jpg" alt="image6" /></a>
+				<div id="gallery" class="imageCenter">
+					<a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
+					<a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
+					<a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
+					<a href="images/imagesBig/image4B.jpg"><img src="images/smallImages/image4S.jpg" alt="image4" /></a>
+					<a href="images/imagesBig/image5B.jpg"><img src="images/smallImages/image5S.jpg" alt="image5" /></a>
+					<a href="images/imagesBig/image6B.jpg"><img src="images/smallImages/image6S.jpg" alt="image6" /></a>
+				</div>
 			</div>
-            </div>
-            <div class="dt-6 tl-6 tp-6 ml-12">
-			<div id="bigPic" class="imageCenter"></div>
+			<div class="dt-6 tl-6 tp-6 ml-12">
+				<div id="bigPic" class="imageCenter"></div>
+			</div>
 		</div>
-        </div>
-        <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> 
+		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
 	</section>
-	
+
 	<!--  ACCORDION SECTION-->
 	<section id="accordionJS" class="row">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
@@ -930,17 +977,6 @@
 
 				</div>
 			</div>
-<div class="accordionItem close">
-				<h2 class="accordionItemHeading">Heading</h2>
-				<div class="accordionItemContent">
-
-
-					<p>Close Content</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
-
-				</div>
-			</div>
-			
 			<div class="accordionItem close">
 				<h2 class="accordionItemHeading">Heading</h2>
 				<div class="accordionItemContent">
@@ -951,17 +987,28 @@
 
 				</div>
 			</div>
-		
-					
+
+			<div class="accordionItem close">
+				<h2 class="accordionItemHeading">Heading</h2>
+				<div class="accordionItemContent">
+
+
+					<p>Close Content</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+
+				</div>
+			</div>
+
+
 		</div>
 
-<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> 
+		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
 
 	</section>
 
 	<!--  END ACCORDION SECTION  -->
-	
-		<!--SECTION TABS-->
+
+	<!--SECTION TABS-->
 
 
 
@@ -991,7 +1038,7 @@
         
         Content 1
       </h5>
-      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Omnis nihil nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore laborum eos accusamus vel! Possimus, porro.</span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
 
 
 
@@ -999,11 +1046,11 @@
 					</li>
 					<li>
 						<div>
-						<h5>
+							<h5>
         
         Content 2
       </h5>
-      <p><span>Nostrum quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Omnis nihil nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore </span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
 						</div>
 					</li>
 					<li>
@@ -1012,7 +1059,7 @@
         
         Content 3
       </h5>
-      <p><span>Lorem quis aspernatur necessitatibus optio voluptate eligendi enim quaerat id quidem eum quos dignissimos natus doloremque at, porro cum! Ut, nemo, dicta.</span><span>Nobis enim quod expedita ipsam? Rem quae quas saepe deleniti quod neque porro aliquid itaque ducimus dolorum incidunt nesciunt, corporis fugiat tempore </span></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
 						</div>
 					</li>
 				</ul>
@@ -1024,24 +1071,70 @@
 
 	<!--END SECTION TABS-->
 	<!--LOGIN-->
-		<section id="loginJS" class="row">
+
+
+	<section id="barJS" class="row">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Login</h1>
-	 <div id="login">
-           
-           </div>
-            </div>
-    </section>
-           <!--END LOGIN-->
+			<!-- multistep form -->
+			<h1>Progress Bar</h1>
+			<form id="msform">
+				<!-- progressbar -->
+				<ul id="progressbar">
+					<li class="active">Account Setup</li>
+					<li>Social Profiles</li>
+					<li>Personal Details</li>
+				</ul>
+				<!-- fieldsets -->
+				<fieldset>
+					<h2 class="fs-title">Create your account</h2>
+					<h3 class="fs-subtitle">This is step 1</h3>
+					<input type="text" name="email" placeholder="Email" />
+					<input type="password" name="pass" placeholder="Password" />
+					<input type="password" name="cpass" placeholder="Confirm Password" />
+					<input type="button" name="next" class="next action-button" value="Next" />
+				</fieldset>
+				<fieldset>
+					<h2 class="fs-title">Social Profiles</h2>
+					<h3 class="fs-subtitle">Your presence on the social network</h3>
+					<input type="text" name="twitter" placeholder="Twitter" />
+					<input type="text" name="facebook" placeholder="Facebook" />
+					<input type="text" name="gplus" placeholder="Google Plus" />
+					<input type="button" name="previous" class="previous action-button" value="Previous" />
+					<input type="button" name="next" class="next action-button" value="Next" />
+				</fieldset>
+				<fieldset>
+					<h2 class="fs-title">Personal Details</h2>
+					<h3 class="fs-subtitle">We will never sell it</h3>
+					<input type="text" name="fname" placeholder="First Name" />
+					<input type="text" name="lname" placeholder="Last Name" />
+					<input type="text" name="phone" placeholder="Phone" />
+					<textarea name="address" placeholder="Address"></textarea>
+					<input type="button" name="previous" class="previous action-button" value="Previous" />
+					<input type="submit" name="submit" class="submit action-button" value="Submit" />
+				</fieldset>
+			</form>
+
+		</div>
+	</section>
+
+
+	<!--END LOGIN-->
 
 
 	<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
-	<footer>
-		<p> &copy; 2017 JustWF</p>
-	</footer>
+
+	<section id="footer" class="row clearfix">
+		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+			<footer>
+				<p> &copy; 2017 JustWF</p>
+			</footer>
+
+		</div>
+	</section>
 
 
-	
+
+
 
 
 </body>
