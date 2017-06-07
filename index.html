@@ -2,923 +2,910 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="JustWF is a set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to help developers to gain the upper hand in the web projects." />
-	<meta name="copyright" content="Ruslan, Alexandr and Irina justWF.com All Rights Reserved" />
-	<link rel="stylesheet" href="styles/css/font-awesome.min.css">
-	<title>JustWF</title>
-	<link rel="stylesheet" href="styles/css/style.css">
-	<link rel="stylesheet" href="styles/css/nav.css">
-	<link rel="stylesheet" href="styles/css/grid.css" type="text/css">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="scripts/main.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JustWF is a set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to help developers to gain the upper hand in the web projects." />
+    <meta name="copyright" content="Ruslan, Alexandr and Irina justWF.com All Rights Reserved" />
+    <link rel="stylesheet" href="styles/css/font-awesome.min.css">
+    <title>JustWF</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/nav.css">
+    <link rel="stylesheet" href="styles/css/grid.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<!--NAVIGATION-->
-	<nav class="mp-12 ml-12 tp-12 tl-12 dt-12">
-		<h1>
+    <!--NAVIGATION-->
+    <nav class="mp-12 ml-12 tp-12 tl-12 dt-12">
+        <h1>
       <a href="index.html">JustWF</a>
     </h1>
-		<input type="checkbox" id="open-menu" />
-		<label for="open-menu" class="label-hamburger"></label>
-		<ul class="header-nav">
-			<li> <a href="#intro" class="link-menu"><i class="fa fa-info-circle" aria-hidden="true"></i> Intro</a> </li>
-			<li> <a href="#grid" class="link-menu"><i class="fa fa-th" aria-hidden="true"></i> Grid</a> </li>
-			<li class="drop-down"> <a href="#typography" class="link-menu"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
-				<ul class="menu-drop">
-					<li> <a href="#typography" class="link-menu">Typography</a> </li>
-					<li> <a href="#buttons" class="link-menu"> Buttons</a> </li>
-					<li> <a href="#lists" class="link-menu"> Lists</a> </li>
-					<li> <a href="#media" class="link-menu"> Media</a> </li>
-					<li> <a href="#tables" class="link-menu"> Tables</a> </li>
-					<li> <a href="#forms" class="link-menu"> Forms</a> </li>
-				</ul>
-			</li>
-			<li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a>
-				<ul class="menu-drop">
-					<li> <a href="#js" class="link-menu">Gallery</a> </li>
-					<li> <a href="#accordionJS" class="link-menu"> Accordion</a> </li>
-					<li> <a href="#tabsJS" class="link-menu"> Tabs</a> </li>
-					<li> <a href="#barJS" class="link-menu"> Bar</a> </li>
-				</ul>
-			</li>
-			<li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
-			<li class="drop-down"> <a href="#" class="link-menu"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
-				<div class="menu-dropLogin">
-					<form class="form">
-						<div class="wrap-input">
-							<input type="text" id="user" required placeholder="Username or E-mail" />
-							<label>Username or E-mail</label>
-						</div>
-						<div class="wrap-input">
-							<input type="password" id="pass" required placeholder="Password" />
-							<label>Password</label>
-						</div>
-						<button class="btnLogin">Login</button>
-						<div class="info"> <a href="#" class="forgot">Forgot your password?</a> </div>
-					</form>
-				</div>
-			</li>
-		</ul>
-	</nav>
-	<!--END NAVIGATION-->
-	<!--HEADER-->
-	<header class="row" id="home">
-		<section class="row justWF posRel">
-			<div class="dt-12 centerBottom" id="info">
-				<h1>JustWF</h1>
-				<h3>WEB FRAMEWORK SOLUTIONS</h3> <a class="button green" href="#intro"><i class="fa fa-play-circle"></i> Get Started</a> <a class="button blue" href="https://github.com/IrinaSerova/JustWF"><i class="fa fa-cloud-download"></i> Github</a> </div>
-		</section>
-	</header>
-	<!--END HEADER-->
-	<!--SECTION INTRO-->
-	<section id="intro" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<dl class="tabs"> <dt><i class="fa fa-info-circle" aria-hidden="true"></i> Introduction</dt>
-				<dd>
-					<p>JustWF is a set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to help developers to gain the upper hand in the web projects</p>
-				</dd> <dt class="active"><i class="fa fa-wrench" aria-hidden="true"></i> Instructions</dt>
-				<dd>
-					<ol>
-						<li> Download JustWF</li>
-						<li>Include jQuery and HTML</li>
-						<li>Copy Elements into your HTML document</li>
-						<li>Wrap everything into class .wrapper</li>
-						<li>Now you can build rows by simply adding class .row to parent element</li>
-						<li>It's time to add columns: JustWF is based on 12 columns structure and 5 break points</li>
-						<li>Columns name:
-							<ul>
-								<li>desktop: 1169px(dt-1 To dt-12)</li>
-								<li>max-width: 1169px(tl-1 To tl-12)</li>
-								<li>max-width: 1023px (tp-1 To tp-12)</li>
-								<li>max-width: 767px(ml-1 To ml-12)</li>
-								<li>max-width: 667px(mp-1 To mp-12)</li>
-							</ul>
-						</li>
-						<li>We also have support classes to indent the content, such as:
-							<ul>
-								<li>indent-dt-1 To indent-dt-12</li>
-								<li>indent-tl-1 To indent-tl-12</li>
-								<li>indent-tp-1 To indent-tp-12</li>
-								<li>indent-ml-1 To indent-ml-12</li>
-								<li>indent-mp-1 To indent-mp-12</li>
-							</ul>
-						</li>
-					</ol>
-				</dd> <dt><i class="fa fa-code" aria-hidden="true"></i> Code</dt>
-				<dd> <code> &lt;link rel=&quot;stylesheet&quot; href=&quot;css/justWF.css&quot; &quot; /&gt; &lt;!-- JustWF --&gt;</code>
-					<p>If you want to use icons with JustWF, don't forget to include Font Awesome:</p> <code> &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; &quot; </code> </dd>
-			</dl>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<!--END SECTION INTRO-->
-	<!--SECTION GRID-->
-	<section id="grid" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Grid</h1>
-			<div class="row">
-				<div class="dt-2 tl-2 tp-2 ml-2 mp-2 grayRed"> 2</div>
-				<div class="dt-10 tl-10 tp-10 ml-10 mp-10 grayRed">10</div>
-			</div>
-			<div class="row">
-				<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
-				<div class="dt-9 tl-9 tp-9 ml-9 mp-9 grayRed">9</div>
-			</div>
-			<div class="row">
-				<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
-				<div class="dt-8 tl-8 tp-8 ml-8 mp-8 grayRed">8</div>
-			</div>
-			<div class="row">
-				<div class="dt-5 tl-5 tp-5 ml-5 mp-5 grayRed">5</div>
-				<div class="dt-7 tl-7 tp-7 ml-7 mp-7 grayRed">7</div>
-			</div>
-			<div class="row">
-				<div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
-				<div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
-			</div>
-			<div class="row">
-				<div class="dt-12 tl-12 tp-12 ml-12 mp-12 grayRed">12</div>
-			</div>
-			<div class="row">
-				<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
-				<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
-				<div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
-			</div>
-			<div class="row">
-				<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
-				<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
-				<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
-				<div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
-			</div>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<!--END SECTION GRID-->
-	<!--SECTION TYPOGRAPHY-->
-	<section id="typography" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h2>Typography</h2>
-			<div>
-				<div class="accordionItem open">
-					<h2 class="accordionItemHeading">Fonts</h2>
-					<div class="accordionItemContent">
-						<h2>Lato</h2>
-						<p> The standard font JustWF uses Lato. We have included the font files with our framework. </p>
-						<div class="row">
-							<p>We bundle our framework with the latest iteration of Lato Google has released. It comes with 6 different font weights you can use: </p>
-							<ul>
-								<li>light 300</li>
-								<li>light 300 Italic</li>
-								<li>regular 400</li>
-								<li>regular 400 Italic</li>
-								<li>bold 700</li>
-								<li>bold 700 Italic</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Paragraphs</h2>
-					<div class="accordionItemContent">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ut sed pariatur obcaecati veritatis quas quae doloribus, cupiditate, rerum vel dolores? Beatae quos tenetur et incidunt consequuntur nostrum, architecto consequatur!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum animi, vero in, quo fugit ratione soluta quis, pariatur unde enim sed minima culpa. Deleniti similique, ducimus incidunt temporibus quae quod.</p>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Helper Classes</h2>
-					<div class="accordionItemContent">
-						<div class="clearfix">
-							<button class=" floatLeft">Example Button floated left</button>
-							<button class=" floatRight">Example Button floated right</button>
-						</div>
-						<p>To float an element left or right, you can add the class <code>floatLeft</code> or <code>floatRight</code> to your tag. </p>
-						<p>To fix issues related to floating child elements within a parent element, you can add the class <code>clearfix</code> to your tag. </p>
-						<p class="noscreen">
-							<h3>"No Screen" Paragraph</h3>
-							<p class="noscreen">To print things that aren't displayed on the screen, you can add the class <code>noscreen</code> to your tag. </p>
-							<h3>"No  Print" Paragraph</h3>
-							<p class="noprint">To display things on the screen that are not printed, you can add the class <code>noprint</code> to your tag. </p>
-							<p class="textBlue">To display text in blue color, you can add the class <code>textBlue</code> to your tag.</p>
-							<p class="textRed">To display text in red color, you can add the class <code>textRed</code> to your tag.</p>
-							<p class="textGreen">To display text in green color, you can add the class <code>textGreen</code> to your tag.</p>
-							<p class="bgGreen">To display background in green color, you can add the class <code>bgGreen</code> to your tag.</p>
-							<p class="bgBlue">To display text in blue color, you can add the class <code>bgBlue</code> to your tag.</p>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Heading</h2>
-					<div class="accordionItemContent">
-						<h1>H1. First Level Headline</h1>
-						<h2>H2. Second Level Headline</h2>
-						<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Atque itaque neque magni vitae tenetur in aliquid, quas omnis fugit. Laudantium praesentium quam, aspernatur <em>aperiam</em> explicabo! Sint unde id quas. Repudiandae!</p>
-						<p>Molestias provident ab culpa dolore accusantium reprehenderit porro, sit, minima sequi sapiente ad explicabo officiis. Odit sint, aut facere qui sit officiis necessitatibus quisquam aspernatur eaque eius, aperiam iste quidem.</p>
-						<h3>H3. Third level headline</h3>
-						<p class="small">Facere quas illum omnis totam fugiat voluptas consequatur officiis reiciendis nihil aut quasi dolore similique illo eveniet rerum, atque, quaerat harum praesentium. Neque quaerat id molestiae cupiditate, laudantium cum blanditiis?</p>
-						<h4>H4. Fourth level headline</h4>
-						<p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
-						<h5>H5. Fifth level headline</h5>
-						<p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
-						<h6>H6. Six level headline</h6>
-						<p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Blockquote</h2>
-					<div class="accordionItemContent">
-						<blockquote>Voluptatum labore sapiente, expedita. Ab facere omnis sed quisquam, perferendis, delectus voluptates asperiores natus ea laudantium nemo architecto laboriosam reiciendis ipsa dignissimos. Eligendi sed, hic vitae, assumenda a dicta ullam.</blockquote>
-						<p><code>&lt;blockquote&gt;</code></p>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Inline Styles</h2>
-					<div class="accordionItemContent">
-						<div class="row">
-							<div class="dt-5 tl-5 tp-5 ml-5 mp-12 ">
-								<p><abbr title="Cascading Style Sheets">CSS</abbr></p>
-								<p><cite>Origin of Species</cite></p>
-								<p><code>Code tag</code></p>
-								<p><em>Emphasis</em></p>
-								<p>
-									<mark>Mark text</mark>
-								</p>
-								<p><del>Strike</del></p>
-								<p><strong>Strong</strong></p>
-								<p> <a href="">Inline Link</a> </p> <address>
+        <input type="checkbox" id="open-menu" />
+        <label for="open-menu" class="label-hamburger"></label>
+        <ul class="header-nav">
+            <li> <a href="#intro" class="link-menu"><i class="fa fa-info-circle" aria-hidden="true"></i> Intro</a> </li>
+            <li> <a href="#grid" class="link-menu"><i class="fa fa-th" aria-hidden="true"></i> Grid</a> </li>
+            <li class="drop-down"> <a href="#typography" class="link-menu"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
+                <ul class="menu-drop">
+                    <li> <a href="#typography" class="link-menu">Typography</a> </li>
+                    <li> <a href="#buttons" class="link-menu"> Buttons</a> </li>
+                    <li> <a href="#lists" class="link-menu"> Lists</a> </li>
+                    <li> <a href="#media" class="link-menu"> Media</a> </li>
+                    <li> <a href="#tables" class="link-menu"> Tables</a> </li>
+                    <li> <a href="#forms" class="link-menu"> Forms</a> </li>
+                </ul>
+            </li>
+            <li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a>
+                <ul class="menu-drop">
+                    <li> <a href="#js" class="link-menu">Gallery</a> </li>
+                    <li> <a href="#accordionJS" class="link-menu"> Accordion</a> </li>
+                    <li> <a href="#tabsJS" class="link-menu"> Tabs</a> </li>
+                    <li> <a href="#barJS" class="link-menu"> Bar</a> </li>
+                </ul>
+            </li>
+            <li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
+            <li class="drop-down"> <a href="#" class="link-menu"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <div class="menu-dropLogin">
+                    <form class="form">
+                        <div class="wrap-input">
+                            <input type="text" id="user" required placeholder="Username or E-mail" />
+                            <label>Username or E-mail</label>
+                        </div>
+                        <div class="wrap-input">
+                            <input type="password" id="pass" required placeholder="Password" />
+                            <label>Password</label>
+                        </div>
+                        <button class="btnLogin">Login</button>
+                        <div class="info"> <a href="#" class="forgot">Forgot your password?</a> </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--END NAVIGATION-->
+    <!--HEADER-->
+    <header class="row" id="home">
+        <section class="row justWF posRel">
+            <div class="dt-12 centerBottom" id="info">
+                <h1>JustWF</h1>
+                <h3>WEB FRAMEWORK SOLUTIONS</h3> <a class="button green" href="#intro"><i class="fa fa-play-circle"></i> Get Started</a> <a class="button blue" href="https://github.com/IrinaSerova/JustWF"><i class="fa fa-cloud-download"></i> Github</a> </div>
+        </section>
+    </header>
+    <!--END HEADER-->
+    <!--SECTION INTRO-->
+    <section id="intro" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <dl class="tabs"> <dt><i class="fa fa-info-circle" aria-hidden="true"></i> Introduction</dt>
+                <dd>
+                    <p>JustWF is a set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to help developers to gain the upper hand in the web projects</p>
+                </dd> <dt class="active"><i class="fa fa-wrench" aria-hidden="true"></i> Instructions</dt>
+                <dd>
+                    <ol>
+                        <li> Download JustWF</li>
+                        <li>Include jQuery and HTML</li>
+                        <li>Copy Elements into your HTML document</li>
+                        <li>Wrap everything into class .wrapper</li>
+                        <li>Now you can build rows by simply adding class .row to parent element</li>
+                        <li>It's time to add columns: JustWF is based on 12 columns structure and 5 break points</li>
+                        <li>Columns name:
+                            <ul>
+                                <li>desktop: 1169px(dt-1 To dt-12)</li>
+                                <li>max-width: 1169px(tl-1 To tl-12)</li>
+                                <li>max-width: 1023px (tp-1 To tp-12)</li>
+                                <li>max-width: 767px(ml-1 To ml-12)</li>
+                                <li>max-width: 667px(mp-1 To mp-12)</li>
+                            </ul>
+                        </li>
+                        <li>We also have support classes to indent the content, such as:
+                            <ul>
+                                <li>indent-dt-1 To indent-dt-12</li>
+                                <li>indent-tl-1 To indent-tl-12</li>
+                                <li>indent-tp-1 To indent-tp-12</li>
+                                <li>indent-ml-1 To indent-ml-12</li>
+                                <li>indent-mp-1 To indent-mp-12</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </dd> <dt><i class="fa fa-code" aria-hidden="true"></i> Code</dt>
+                <dd> <code> &lt;link rel=&quot;stylesheet&quot; href=&quot;css/justWF.css&quot; &quot; /&gt; &lt;!-- JustWF --&gt;</code>
+                    <p>If you want to use icons with JustWF, don't forget to include Font Awesome:</p> <code> &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; &quot; </code> </dd>
+            </dl>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <!--END SECTION INTRO-->
+    <!--SECTION GRID-->
+    <section id="grid" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Grid</h1>
+            <div class="row">
+                <div class="dt-2 tl-2 tp-2 ml-2 mp-2 grayRed"> 2</div>
+                <div class="dt-10 tl-10 tp-10 ml-10 mp-10 grayRed">10</div>
+            </div>
+            <div class="row">
+                <div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+                <div class="dt-9 tl-9 tp-9 ml-9 mp-9 grayRed">9</div>
+            </div>
+            <div class="row">
+                <div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+                <div class="dt-8 tl-8 tp-8 ml-8 mp-8 grayRed">8</div>
+            </div>
+            <div class="row">
+                <div class="dt-5 tl-5 tp-5 ml-5 mp-5 grayRed">5</div>
+                <div class="dt-7 tl-7 tp-7 ml-7 mp-7 grayRed">7</div>
+            </div>
+            <div class="row">
+                <div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
+                <div class="dt-6 tl-6 tp-6 ml-6 mp-6 grayRed">6</div>
+            </div>
+            <div class="row">
+                <div class="dt-12 tl-12 tp-12 ml-12 mp-12 grayRed">12</div>
+            </div>
+            <div class="row">
+                <div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+                <div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+                <div class="dt-4 tl-4 tp-4 ml-4 mp-4 grayRed">4</div>
+            </div>
+            <div class="row">
+                <div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+                <div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+                <div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+                <div class="dt-3 tl-3 tp-3 ml-3 mp-3 grayRed">3</div>
+            </div>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <!--END SECTION GRID-->
+    <!--SECTION TYPOGRAPHY-->
+    <section id="typography" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h2>Typography</h2>
+            <div>
+                <div class="accordionItem open">
+                    <h2 class="accordionItemHeading">Fonts</h2>
+                    <div class="accordionItemContent">
+                        <h2>Lato</h2>
+                        <p> The standard font JustWF uses Lato. We have included the font files with our framework. </p>
+                        <div class="row">
+                            <p>We bundle our framework with the latest iteration of Lato Google has released. It comes with 6 different font weights you can use: </p>
+                            <ul>
+                                <li>light 300</li>
+                                <li>light 300 Italic</li>
+                                <li>regular 400</li>
+                                <li>regular 400 Italic</li>
+                                <li>bold 700</li>
+                                <li>bold 700 Italic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Paragraphs</h2>
+                    <div class="accordionItemContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ut sed pariatur obcaecati veritatis quas quae doloribus, cupiditate, rerum vel dolores? Beatae quos tenetur et incidunt consequuntur nostrum, architecto consequatur!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum animi, vero in, quo fugit ratione soluta quis, pariatur unde enim sed minima culpa. Deleniti similique, ducimus incidunt temporibus quae quod.</p>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Helper Classes</h2>
+                    <div class="accordionItemContent">
+                        <div class="clearfix">
+                            <button class=" floatLeft">Example Button floated left</button>
+                            <button class=" floatRight">Example Button floated right</button>
+                        </div>
+                        <p>To float an element left or right, you can add the class <code>floatLeft</code> or <code>floatRight</code> to your tag. </p>
+                        <p>To fix issues related to floating child elements within a parent element, you can add the class <code>clearfix</code> to your tag. </p>
+                        <p class="noscreen">
+                            <h3>"No Screen" Paragraph</h3>
+                            <p class="noscreen">To print things that aren't displayed on the screen, you can add the class <code>noscreen</code> to your tag. </p>
+                            <h3>"No  Print" Paragraph</h3>
+                            <p class="noprint">To display things on the screen that are not printed, you can add the class <code>noprint</code> to your tag. </p>
+                            <p class="textBlue">To display text in blue color, you can add the class <code>textBlue</code> to your tag.</p>
+                            <p class="textRed">To display text in red color, you can add the class <code>textRed</code> to your tag.</p>
+                            <p class="textGreen">To display text in green color, you can add the class <code>textGreen</code> to your tag.</p>
+                            <p class="bgGreen">To display background in green color, you can add the class <code>bgGreen</code> to your tag.</p>
+                            <p class="bgBlue">To display text in blue color, you can add the class <code>bgBlue</code> to your tag.</p>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Heading</h2>
+                    <div class="accordionItemContent">
+                        <h1>H1. First Level Headline</h1>
+                        <h2>H2. Second Level Headline</h2>
+                        <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Atque itaque neque magni vitae tenetur in aliquid, quas omnis fugit. Laudantium praesentium quam, aspernatur <em>aperiam</em> explicabo! Sint unde id quas. Repudiandae!</p>
+                        <p>Molestias provident ab culpa dolore accusantium reprehenderit porro, sit, minima sequi sapiente ad explicabo officiis. Odit sint, aut facere qui sit officiis necessitatibus quisquam aspernatur eaque eius, aperiam iste quidem.</p>
+                        <h3>H3. Third level headline</h3>
+                        <p class="small">Facere quas illum omnis totam fugiat voluptas consequatur officiis reiciendis nihil aut quasi dolore similique illo eveniet rerum, atque, quaerat harum praesentium. Neque quaerat id molestiae cupiditate, laudantium cum blanditiis?</p>
+                        <h4>H4. Fourth level headline</h4>
+                        <p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
+                        <h5>H5. Fifth level headline</h5>
+                        <p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
+                        <h6>H6. Six level headline</h6>
+                        <p>Nesciunt odio velit quae sapiente saepe officia fugit delectus asperiores, eius temporibus expedita voluptate, placeat totam! Reprehenderit esse deserunt laboriosam, nihil architecto recusandae quas nam quo placeat, perspiciatis natus. Explicabo.</p>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Blockquote</h2>
+                    <div class="accordionItemContent">
+                        <blockquote>Voluptatum labore sapiente, expedita. Ab facere omnis sed quisquam, perferendis, delectus voluptates asperiores natus ea laudantium nemo architecto laboriosam reiciendis ipsa dignissimos. Eligendi sed, hic vitae, assumenda a dicta ullam.</blockquote>
+                        <p><code>&lt;blockquote&gt;</code></p>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Inline Styles</h2>
+                    <div class="accordionItemContent">
+                        <div class="row">
+                            <div class="dt-5 tl-5 tp-5 ml-5 mp-12 ">
+                                <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+                                <p><cite>Origin of Species</cite></p>
+                                <p><code>Code tag</code></p>
+                                <p><em>Emphasis</em></p>
+                                <p>
+                                    <mark>Mark text</mark>
+                                </p>
+                                <p><del>Strike</del></p>
+                                <p><strong>Strong</strong></p>
+                                <p> <a href="">Inline Link</a> </p> <address>
                         mail to <a href="mailto:webmaster@example.com">...this address...</a></address> </div>
-							<div class="dt-7 tl-7 tp-7 ml-7 mp-12">
-								<p><code>&lt;abbr&gt;</code></p>
-								<p><code>&lt;cite&gt;</code></p>
-								<p><code>&lt;code&gt;</code></p>
-								<p><code>&lt;em&gt;</code></p>
-								<p><code>&lt;mark&gt;</code></p>
-								<p><code>&lt;del&gt;</code></p>
-								<p><code>&lt;strong&gt;</code></p>
-								<p><code>&lt;a href=""&gt;Link&lt;/a&gt;</code></p>
-								<p><code>&lt;address&gt;</code></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Transformation Styles</h2>
-					<div class="accordionItemContent">
-						<div class="row">
-							<div class="dt-5 tl-5 tp-5 ml-5 mp-12 ">
-								<p class="uppercase">uppercase</p>
-								<p class="lowercase">lowercase</p>
-								<p class="capitalize">capitalize</p>
-							</div>
-							<div class="dt-7 tl-7 tp-7 ml-7 mp-12">
-								<p><code>.uppercase</code></p>
-								<p><code>.lowercase</code></p>
-								<p><code>.capitalize</code></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Definitions</h2>
-					<div class="accordionItemContent">
-						<div class="row">
-							<p>A very basic definition list</p>
-							<dl> <dt>a genus</dt>
-								<dd>An existing definition that serves as a portion of the new definition; all definitions with the same genus are considered members of that genus.</dd> <dt>the differentia</dt>
-								<dd>The portion of the new definition that is not provided by the genus.</dd>
-							</dl>
-						</div>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Lists</h2>
-					<div class="accordionItemContent">
-						<div class="row">
-							<div class="dt-6 tl-6 tp-6 ml-6 mp-12">
-								<!-- Unordered list -->
-								<p><code>&lt;ul&gt;</code></p>
-								<ul>
-									<li>Unordered list item 1
-										<ul>
-											<li>Unordered list item 1.1</li>
-											<li>Unordered list item 1.2</li>
-										</ul>
-									</li>
-									<li>Unordered list item 2</li>
-									<li>Unrdered list item 3</li>
-								</ul>
-							</div>
-							<div class="dt-6 tl-6 tp-6 ml-6 mp-12">
-								<!-- Ordered list -->
-								<p><code>&lt;ol&gt;</code></p>
-								<ol>
-									<li>Ordered list item 1
-										<ol>
-											<li>Unordered list item 1.1</li>
-											<li>Unordered list item 1.2</li>
-										</ol>
-									</li>
-									<li>Ordered list item 2</li>
-									<li>Ordered list item 3</li>
-								</ol>
-							</div>
-							<!-- Unordered list -->
-						</div>
-					</div>
-				</div>
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Alignments</h2>
-					<div class="accordionItemContent">
-						<div class="align-left">
-							<p>Text aligned left:</p> <code>.align-left</code>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe accusamus, delectus accusantium temporibus ea nihil asperiores laboriosam labore facilis, ipsam est eligendi, quae odit quas blanditiis maiores, hic commodi.</p>
-						</div>
-						<div class="align-center">
-							<p>Text aligned center:</p> <code>.align-center</code>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis, suscipit illo id culpa odit recusandae eum non ad quisquam corporis, dolores fugiat nemo deserunt? Magni deserunt iste quo rem.</p>
-						</div>
-						<div class="align-right">
-							<p>Text aligned right:</p> <code>.align-right</code>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
-						</div>
-						<div class="align-justify">
-							<p>Text aligned justify style:</p> <code>.align-justify</code>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
-						</div>
-						<div class="align-inherit">
-							<p>Text aligned inherit style:</p> <code>.align-inherit</code>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<!--END SECTION TYPOGRAPHY-->
-	<!--SECTION BUTTONS-->
-	<section id="buttons" class="row tabsAside">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Buttons</h1>
-			<div class="dt-4 tl-4 tp-4 ml-4 mp-12">
-				<div class="menu">
-					<div class="active"><span class="light"></span><span>Default</span></div>
-					<div><span class="light"></span><span>Colored</span></div>
-					<div><span class="light"></span><span>Sizes</span></div>
-				</div>
-			</div>
-			<div class="dt-8 tl-8 tp-8 ml-8 mp-12">
-				<ul class="tabsAside">
-					<li class="active">
-						<div>
-							<h5>
+                            <div class="dt-7 tl-7 tp-7 ml-7 mp-12">
+                                <p><code>&lt;abbr&gt;</code></p>
+                                <p><code>&lt;cite&gt;</code></p>
+                                <p><code>&lt;code&gt;</code></p>
+                                <p><code>&lt;em&gt;</code></p>
+                                <p><code>&lt;mark&gt;</code></p>
+                                <p><code>&lt;del&gt;</code></p>
+                                <p><code>&lt;strong&gt;</code></p>
+                                <p><code>&lt;a href=""&gt;Link&lt;/a&gt;</code></p>
+                                <p><code>&lt;address&gt;</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Transformation Styles</h2>
+                    <div class="accordionItemContent">
+                        <div class="row">
+                            <div class="dt-5 tl-5 tp-5 ml-5 mp-12 ">
+                                <p class="uppercase">uppercase</p>
+                                <p class="lowercase">lowercase</p>
+                                <p class="capitalize">capitalize</p>
+                            </div>
+                            <div class="dt-7 tl-7 tp-7 ml-7 mp-12">
+                                <p><code>.uppercase</code></p>
+                                <p><code>.lowercase</code></p>
+                                <p><code>.capitalize</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Definitions</h2>
+                    <div class="accordionItemContent">
+                        <div class="row">
+                            <p>A very basic definition list</p>
+                            <dl> <dt>a genus</dt>
+                                <dd>An existing definition that serves as a portion of the new definition; all definitions with the same genus are considered members of that genus.</dd> <dt>the differentia</dt>
+                                <dd>The portion of the new definition that is not provided by the genus.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Lists</h2>
+                    <div class="accordionItemContent">
+                        <div class="row">
+                            <div class="dt-6 tl-6 tp-6 ml-6 mp-12">
+                                <!-- Unordered list -->
+                                <p><code>&lt;ul&gt;</code></p>
+                                <ul>
+                                    <li>Unordered list item 1
+                                        <ul>
+                                            <li>Unordered list item 1.1</li>
+                                            <li>Unordered list item 1.2</li>
+                                        </ul>
+                                    </li>
+                                    <li>Unordered list item 2</li>
+                                    <li>Unrdered list item 3</li>
+                                </ul>
+                            </div>
+                            <div class="dt-6 tl-6 tp-6 ml-6 mp-12">
+                                <!-- Ordered list -->
+                                <p><code>&lt;ol&gt;</code></p>
+                                <ol>
+                                    <li>Ordered list item 1
+                                        <ol>
+                                            <li>Unordered list item 1.1</li>
+                                            <li>Unordered list item 1.2</li>
+                                        </ol>
+                                    </li>
+                                    <li>Ordered list item 2</li>
+                                    <li>Ordered list item 3</li>
+                                </ol>
+                            </div>
+                            <!-- Unordered list -->
+                        </div>
+                    </div>
+                </div>
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Alignments</h2>
+                    <div class="accordionItemContent">
+                        <div class="align-left">
+                            <p>Text aligned left:</p> <code>.align-left</code>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit saepe accusamus, delectus accusantium temporibus ea nihil asperiores laboriosam labore facilis, ipsam est eligendi, quae odit quas blanditiis maiores, hic commodi.</p>
+                        </div>
+                        <div class="align-center">
+                            <p>Text aligned center:</p> <code>.align-center</code>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis, suscipit illo id culpa odit recusandae eum non ad quisquam corporis, dolores fugiat nemo deserunt? Magni deserunt iste quo rem.</p>
+                        </div>
+                        <div class="align-right">
+                            <p>Text aligned right:</p> <code>.align-right</code>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+                        </div>
+                        <div class="align-justify">
+                            <p>Text aligned justify style:</p> <code>.align-justify</code>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+                        </div>
+                        <div class="align-inherit">
+                            <p>Text aligned inherit style:</p> <code>.align-inherit</code>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere modi qui sequi! Nesciunt repellat, minus praesentium ad corrupti aliquid quas atque, quod aut odit dolor, placeat recusandae amet natus in?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <!--END SECTION TYPOGRAPHY-->
+    <!--SECTION BUTTONS-->
+    <section id="buttons" class="row tabsAside">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Buttons</h1>
+            <div class="dt-4 tl-4 tp-4 ml-4 mp-12">
+                <div class="menu">
+                    <div class="active"><span class="light"></span><span>Default</span></div>
+                    <div><span class="light"></span><span>Colored</span></div>
+                    <div><span class="light"></span><span>Sizes</span></div>
+                </div>
+            </div>
+            <div class="dt-8 tl-8 tp-8 ml-8 mp-12">
+                <ul class="tabsAside">
+                    <li class="active">
+                        <div>
+                            <h5>
         
         Default Buttons
       </h5> <a href="#">Link</a> <a href="#" class="btn green">Link</a>
-							<!-- Default (no style) -->
-							<button>default</button>
-							<!-- Round -->
-							<button class="round">.round</button>
-							<!-- Square -->
-							<input class="blue" type="Submit" />
-							<!-- Submit -->
-							<input type="Reset" />
-							<button class="active">Active</button>
-							<!-- Active -->
-							<button class="btn btn-default disabled">Disabled</button>
-							<!-- Disabled -->
-						</div>
-					</li>
-					<li>
-						<div>
-							<h5>
+                            <!-- Default (no style) -->
+                            <button>default</button>
+                            <!-- Round -->
+                            <button class="round">.round</button>
+                            <!-- Square -->
+                            <input class="blue" type="Submit" />
+                            <!-- Submit -->
+                            <input type="Reset" />
+                            <button class="active">Active</button>
+                            <!-- Active -->
+                            <button class="btn btn-default disabled">Disabled</button>
+                            <!-- Disabled -->
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>
        
        Colored Buttons
       </h5>
-							<!-- Buttons w/Colors -->
-							<button class="blue"> .blue</button>
-							<button class="orange">.orange</button>
-							<button class="green">.green</button>
-							<button class="red"> .red</button>
-							<button class="sea"> .sea</button>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h5>
+                            <!-- Buttons w/Colors -->
+                            <button class="blue"> .blue</button>
+                            <button class="orange">.orange</button>
+                            <button class="green">.green</button>
+                            <button class="red"> .red</button>
+                            <button class="sea"> .sea</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>
        
        Button Sizes
       </h5>
-							<!-- Button Sizes -->
-							<button class="large">Large</button>
-							<button>Button</button>
-							<button class="medium">Medium</button>
-							<button class="small">Small</button>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<!--END SECTION BUTTONS--><a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
-	<!--  TABLES SECTION-->
-	<section id="tables" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h2>Tables</h2>
-			<div class="accordionItem open">
-				<h2 class="accordionItemHeading">Borderless Table</h2>
-				<div class="accordionItemContent">
-					<p>Tables are borderless by default.</p>
-					<table>
-						<thead>
-							<tr>
-								<th>Title</th>
-								<th>Title</th>
-								<th>Title</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Table Data</td>
-								<td>Table Data</td>
-								<td>$0.89</td>
-							</tr>
-							<tr>
-								<td>Table Data</td>
-								<td>Table Data</td>
-								<td>$0.88</td>
-							</tr>
-							<tr>
-								<td>Table Data</td>
-								<td>Table Data</td>
-								<td>$0.87</td>
-							</tr>
-							<tr>
-								<td>Table Data</td>
-								<td>Table Data</td>
-								<td>$0.86</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div id="bordered">
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Bordered Table</h2>
-					<div class="accordionItemContent">
-						<p>Add <code>class="bordered"</code> to the table tag for a bordered table</p>
-						<table class="bordered">
-							<thead>
-								<tr>
-									<th>Title</th>
-									<th>Title</th>
-									<th>Title</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.89</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.88</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.87</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.86</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div id="striped">
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Striped Table</h2>
-					<div class="accordionItemContent">
-						<p>Add <code>class="striped"</code> to the table tag for a striped table</p>
-						<table class="striped">
-							<thead>
-								<tr>
-									<th>Title</th>
-									<th>Title</th>
-									<th>Title</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.89</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.88</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.87</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.86</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div id="centered">
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Centered Table</h2>
-					<div class="accordionItemContent">
-						<div class="row">
-							<div>
-								<p>Add <code>class="centered"</code> to the table tag to center align all the text in the table</p>
-								<table class="centered">
-									<thead>
-										<tr>
-											<th>Title</th>
-											<th>Title</th>
-											<th>Title</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Table Data</td>
-											<td>Table Data</td>
-											<td>$0.89</td>
-										</tr>
-										<tr>
-											<td>Table Data</td>
-											<td>Table Data</td>
-											<td>$0.88</td>
-										</tr>
-										<tr>
-											<td>Table Data</td>
-											<td>Table Data</td>
-											<td>$0.87</td>
-										</tr>
-										<tr>
-											<td>Table Data</td>
-											<td>Table Data</td>
-											<td>$0.86</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="responsive">
-				<div class="accordionItem close">
-					<h2 class="accordionItemHeading">Responsive Table</h2>
-					<div class="accordionItemContent">
-						<p>Add <code>class="responsive-table"</code> to the table tag to make the table horizontally scrollable on smaller screen widths.</p>
-						<table class="responsive-table">
-							<thead>
-								<tr>
-									<th>Title</th>
-									<th>Title</th>
-									<th>Title</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.89</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.88</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.87</td>
-								</tr>
-								<tr>
-									<td>Table Data</td>
-									<td>Table Data</td>
-									<td>$0.86</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--  END TABLES SECTION  -->
-	<!--  FORMS SECTION  -->
-	<section id="forms" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Forms</h1>
-			<h3>Website Design Request</h3>
-			<p>Fill out the form to request a design</p>
-			<form action="#" method="post" id="contactForm">
-				<fieldset id="getInTouch" title="info">
-					<legend>Information</legend>
-					<ul>
-						<li>
-							<label for="name"><i class="fa fa-male"></i> Name</label>
-							<input type="text" id="name" name="name" title="Please enter you name" placeholder="Last, First" /> <span class="require">*</span> </li>
-						<li>
-							<label for="email"><i class="fa fa-envelope-o"></i> Email</label>
-							<input type="email" id="email" title="Please enter your email address" placeholder="name@example.com" required /> <span class="require">*</span> </li>
-					</ul>
-				</fieldset>
-				<fieldset id="other" title="Other Information">
-					<legend>Other Information</legend>
-					<ul>
-						<li>
-							<label for="tel"><i class="fa fa-phone"></i> Phone Number</label>
-							<input type="tel" id="tel" placeholder="000-000-0000" /> </li>
-						<li class="altLabel">
-							<label for="reference">Type of Website You Need?</label>
-							<select id="reference">
-								<option hidden>Choose</option>
-								<option value="personal">Personal</option>
-								<option value="edu">Educational</option>
-								<option value="sport">Sport</option>
-								<option value="food">Food</option>
-								<option value="other">Other</option>
-							</select>
-						</li>
-						<li class="altLabel">Choose Items for the Navigation Bar
-							<br>
-							<input type="checkbox" id="about" value="yes" checked />
-							<label for="about">About</label>
-						</li>
-						<li class="altLabel">
-							<input type="checkbox" id="faq" value="yes" checked />
-							<label for="faq">FAQ</label>
-						</li>
-						<li class="altLabel">
-							<input type="checkbox" id="userGuide" value="yes" checked />
-							<label for="userGuide">User Guide</label>
-						</li>
-						<li class="altLabel">
-							<input type="checkbox" id="forum" value="yes" checked />
-							<label for="forum">Forum</label>
-						</li>
-						<li class="altLabel">
-							<input type="checkbox" id="contact" value="yes" checked />
-							<label for="contact">Contact Us</label>
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset id="comments" title="Comments">
-					<legend>Comments / Questions</legend>
-					<ul>
-						<li>
-							<div class="groupHeadline">Request Type</div>
-							<ol class="altLabel radioSet">
-								<li>
-									<input type="radio" value="question" id="questionItem" name="requestType" />
-									<label for="questionItem" class="rBtnLabels">Question</label>
-								</li>
-								<li>
-									<input type="radio" value="comment" id="commentItem" name="requestType" />
-									<label for="commentItem" class="rBtnLabels">Comment</label>
-								</li>
-							</ol>
-						</li>
-						<li>
-							<label for="inquiry"></label>
-							<textarea id="inquiry" placeholder="Your comment or question:"></textarea>
-						</li>
-					</ul>
-					<button class="sea">Send</button>
-				</fieldset>
-			</form>
-		</div>
-	</section>
-	<!--  END FORMS SECTION  -->
-	<section id="media" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Media</h1>
-			<h2>Images</h2>
-			<h4>Responsive Images</h4>
-			<p>To make images resize responsively to page width, you can add the class <code>imageResponsive</code> to your image tag. </p>
-			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Circle Images</h4> <img src="images/smallImages/image4S.jpg" class="imgCircle" alt="Image Circle">
-				<p> </p>
-				<p>To shape the image to a circle, you can add <code>imgCircle</code> class to your image tag. </p>
-			</div>
-			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Rounded Corner</h4> <img src="images/smallImages/image5S.jpg" class="imgRounded" alt="Image Rounded Corner">
-				<p>To make images resize responsively to page width, you can add the class <code>imgRounded</code> to your image tag. </p>
-			</div>
-			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Thumbnail</h4> <img src="images/smallImages/image6S.jpg" class="imgThumbnail" alt="Image Thumbnail">
-				<p>To make images resize responsively to page width, you can add the class <code>imgThumbnail</code> to your image tag. </p>
-			</div>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<section id="js" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Javascript</h1>
-			<h3>Gallery</h3>
-			<button class="button small moreInfoBtn">CODE</button>
-			<div class="more-info">
-				<p>If you want to add a Gallery to your page, simply add 2 containers:</p>
-				<p>First container for small pictures we need to add <code>id="gallery"</code></p>
-				<p>Next we adding links to our pictures, first we add links to large size pictures, then to small size pictures. Like this
-					<code>&lt;a href="example.jpg"&gt;&lt;img src="example.jpg" alt="image1" /&gt;&lt;/a&gt;</code></p>
-				<p>The second container is for a large picture on the right side.Create an emply container <code>&lt;div id="bigPic"&gt;&lt;/div&gt;</code></p>
-				<p>Enjoy the Gallery</p>
-			</div>
-
-			<h3>Click an image for larger version</h3>
-			<div class="dt-6 tl-6 tp-6  ml-12">
-				<div id="js" class="imageCenter">
-					<a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
-					<a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
-					<a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
-					<a href="images/imagesBig/image4B.jpg"><img src="images/smallImages/image4S.jpg" alt="image4" /></a>
-					<a href="images/imagesBig/image5B.jpg"><img src="images/smallImages/image5S.jpg" alt="image5" /></a>
-					<a href="images/imagesBig/image6B.jpg"><img src="images/smallImages/image6S.jpg" alt="image6" /></a>
-				</div>
-			</div>
-			<div class="dt-6 tl-6 tp-6 ml-12">
-				<div id="bigPic" class="imageCenter"></div>
-			</div>
-		</div>
-		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<!--  ACCORDION SECTION-->
-	<section id="accordionJS" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h2>Accordion</h2>
-			<div class="row">
-				<button class="button small moreInfoBtn">CODE</button>
-				<div class="more-info">
-					<p>If you want to add an Accordion to your page, simply add 2 containers: </p>
-					<p>First container parent will have <code>class="accordionItem"</code> Here you can add an additional class <code>.open</code> so this tab will be open when page is loaded. Your code will look like <code>&lt;div class="accordionItem open"&gt;</code></p>
-					<p>Next, you would probably want to add tab name, just add <code>&lt;h2 class="accordionItemHeading"&gt;Heading&lt;/h2&gt;</code></p>
-					<p>The second container is inserted in first one and looks like this<code>&lt;div class="accordionItemContent"&gt;</code></p>
-					<p>Add a content to your first tab</p>
-					<p>Close <code>class="accordionItemContent"</code> container</p>
-					<p>Open <code>class="accordionItem open"</code> container</p>
-					<p>You are done with your first tab. Create as many as you need.</p>
-				</div>
-
-
-			</div>
-			<div class="accordionItem open">
-				<h2 class="accordionItemHeading">Heading</h2>
-				<div class="accordionItemContent">
-					<p>Open Content</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
-				</div>
-			</div>
-			<div class="accordionItem close">
-				<h2 class="accordionItemHeading">Heading</h2>
-				<div class="accordionItemContent">
-					<p>Close Content</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
-				</div>
-			</div>
-			<div class="accordionItem close">
-				<h2 class="accordionItemHeading">Heading</h2>
-				<div class="accordionItemContent">
-					<p>Close Content</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
-				</div>
-			</div>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
-	<!--  END ACCORDION SECTION  -->
-
-	<!--SECTION TABS-->
-	<section id="tabsJS" class="row tabsAside">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<h1>Tabs</h1>
-			<div class="row">
-				<button class="button small moreInfoBtn">CODE</button>
-				<div class="more-info">
-					<p>To add this nice tabs on your page you would need:</p>
-					<p>Create a container with special class <code>&lt;div class="menu"&gt;</code></p>
-					<p>Inside of this container create containers for each Header, such as <code>&lt;div&gt;&lt;span class="light"&gt;&lt;/span&gt;&lt;span &gt;Header 1&lt;/span&gt;&lt;/div&gt;</code> Insert as many tabs as you need. </p>
-					<p>Close the container with a class <code>.menu</code></p>
-					<p>Now we begin to work on our right side. Create a <code>&lt;ul&gt;</code>list with a class <code>&lt;ul class="tabsAside"&gt;</code></p>
-					<p> Inside the <code>&lt;ul&gt;</code>create <code>&lt;li&gt;Content 1 Lorem...&lt;/li&gt;</code> and so on for each tab in the left side.</p>
-					<p>Close <code>&lt;/ul&gt;</code></p>
-				</div>
-
-
-
-			</div>
-			<div class="dt-4 tl-4 tp-4 ml-4 mp-12">
-				<div class="menu">
-					<div class="active"><span class="light"></span><span>Header 1</span></div>
-					<div><span class="light"></span><span>Header 2</span></div>
-					<div><span class="light"></span><span>Header 3</span></div>
-				</div>
-			</div>
-			<div class="dt-8 tl-8 tp-8 ml-8 mp-12">
-				<ul class="tabsAside">
-					<li class="active">
-						<div>
-							<h5>
+                            <!-- Button Sizes -->
+                            <button class="large">Large</button>
+                            <button>Button</button>
+                            <button class="medium">Medium</button>
+                            <button class="small">Small</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--END SECTION BUTTONS--><a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
+    <!--  TABLES SECTION-->
+    <section id="tables" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h2>Tables</h2>
+            <div class="accordionItem open">
+                <h2 class="accordionItemHeading">Borderless Table</h2>
+                <div class="accordionItemContent">
+                    <p>Tables are borderless by default.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Title</th>
+                                <th>Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Table Data</td>
+                                <td>Table Data</td>
+                                <td>$0.89</td>
+                            </tr>
+                            <tr>
+                                <td>Table Data</td>
+                                <td>Table Data</td>
+                                <td>$0.88</td>
+                            </tr>
+                            <tr>
+                                <td>Table Data</td>
+                                <td>Table Data</td>
+                                <td>$0.87</td>
+                            </tr>
+                            <tr>
+                                <td>Table Data</td>
+                                <td>Table Data</td>
+                                <td>$0.86</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="bordered">
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Bordered Table</h2>
+                    <div class="accordionItemContent">
+                        <p>Add <code>class="bordered"</code> to the table tag for a bordered table</p>
+                        <table class="bordered">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.89</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.88</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="striped">
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Striped Table</h2>
+                    <div class="accordionItemContent">
+                        <p>Add <code>class="striped"</code> to the table tag for a striped table</p>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.89</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.88</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="centered">
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Centered Table</h2>
+                    <div class="accordionItemContent">
+                        <div class="row">
+                            <div>
+                                <p>Add <code>class="centered"</code> to the table tag to center align all the text in the table</p>
+                                <table class="centered">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Title</th>
+                                            <th>Title</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>$0.89</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>$0.88</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>$0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>$0.86</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="responsive">
+                <div class="accordionItem close">
+                    <h2 class="accordionItemHeading">Responsive Table</h2>
+                    <div class="accordionItemContent">
+                        <p>Add <code>class="responsive-table"</code> to the table tag to make the table horizontally scrollable on smaller screen widths.</p>
+                        <table class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.89</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.88</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Table Data</td>
+                                    <td>Table Data</td>
+                                    <td>$0.86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  END TABLES SECTION  -->
+    <!--  FORMS SECTION  -->
+    <section id="forms" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Forms</h1>
+            <h3>Website Design Request</h3>
+            <p>Fill out the form to request a design</p>
+            <form action="#" method="post" id="contactForm">
+                <fieldset id="getInTouch" title="info">
+                    <legend>Information</legend>
+                    <ul>
+                        <li>
+                            <label for="name"><i class="fa fa-male"></i> Name</label>
+                            <input type="text" id="name" name="name" title="Please enter you name" placeholder="Last, First" /> <span class="require">*</span> </li>
+                        <li>
+                            <label for="email"><i class="fa fa-envelope-o"></i> Email</label>
+                            <input type="email" id="email" title="Please enter your email address" placeholder="name@example.com" required /> <span class="require">*</span> </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="other" title="Other Information">
+                    <legend>Other Information</legend>
+                    <ul>
+                        <li>
+                            <label for="tel"><i class="fa fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="tel" placeholder="000-000-0000" /> </li>
+                        <li class="altLabel">
+                            <label for="reference">Type of Website You Need?</label>
+                            <select id="reference">
+                                <option hidden>Choose</option>
+                                <option value="personal">Personal</option>
+                                <option value="edu">Educational</option>
+                                <option value="sport">Sport</option>
+                                <option value="food">Food</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </li>
+                        <li class="altLabel">Choose Items for the Navigation Bar
+                            <br>
+                            <input type="checkbox" id="about" value="yes" checked />
+                            <label for="about">About</label>
+                        </li>
+                        <li class="altLabel">
+                            <input type="checkbox" id="faq" value="yes" checked />
+                            <label for="faq">FAQ</label>
+                        </li>
+                        <li class="altLabel">
+                            <input type="checkbox" id="userGuide" value="yes" checked />
+                            <label for="userGuide">User Guide</label>
+                        </li>
+                        <li class="altLabel">
+                            <input type="checkbox" id="forum" value="yes" checked />
+                            <label for="forum">Forum</label>
+                        </li>
+                        <li class="altLabel">
+                            <input type="checkbox" id="contact" value="yes" checked />
+                            <label for="contact">Contact Us</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="comments" title="Comments">
+                    <legend>Comments / Questions</legend>
+                    <ul>
+                        <li>
+                            <div class="groupHeadline">Request Type</div>
+                            <ol class="altLabel radioSet">
+                                <li>
+                                    <input type="radio" value="question" id="questionItem" name="requestType" />
+                                    <label for="questionItem" class="rBtnLabels">Question</label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="comment" id="commentItem" name="requestType" />
+                                    <label for="commentItem" class="rBtnLabels">Comment</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label for="inquiry"></label>
+                            <textarea id="inquiry" placeholder="Your comment or question:"></textarea>
+                        </li>
+                    </ul>
+                    <button class="sea">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!--  END FORMS SECTION  -->
+    <section id="media" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Media</h1>
+            <h2>Images</h2>
+            <h4>Responsive Images</h4>
+            <p>To make images resize responsively to page width, you can add the class <code>imageResponsive</code> to your image tag. </p>
+            <div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
+                <h4>Circle Images</h4> <img src="images/smallImages/image4S.jpg" class="imgCircle" alt="Image Circle">
+                <p> </p>
+                <p>To shape the image to a circle, you can add <code>imgCircle</code> class to your image tag. </p>
+            </div>
+            <div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
+                <h4>Rounded Corner</h4> <img src="images/smallImages/image5S.jpg" class="imgRounded" alt="Image Rounded Corner">
+                <p>To make images resize responsively to page width, you can add the class <code>imgRounded</code> to your image tag. </p>
+            </div>
+            <div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
+                <h4>Thumbnail</h4> <img src="images/smallImages/image6S.jpg" class="imgThumbnail" alt="Image Thumbnail">
+                <p>To make images resize responsively to page width, you can add the class <code>imgThumbnail</code> to your image tag. </p>
+            </div>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <section id="js" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Javascript</h1>
+            <h3>Gallery</h3>
+            <button class="button small moreInfoBtn">CODE</button>
+            <div class="more-info">
+                <p>If you want to add a Gallery to your page, simply add 2 containers:</p>
+                <p>First container for small pictures we need to add <code>id="gallery"</code></p>
+                <p>Next we adding links to our pictures, first we add links to large size pictures, then to small size pictures. Like this <code>&lt;a href="example.jpg"&gt;&lt;img src="example.jpg" alt="image1" /&gt;&lt;/a&gt;</code></p>
+                <p>The second container is for a large picture on the right side.Create an emply container <code>&lt;div id="bigPic"&gt;&lt;/div&gt;</code></p>
+                <p>Enjoy the Gallery</p>
+            </div>
+            <h3>Click an image for larger version</h3>
+            <div class="dt-6 tl-6 tp-6  ml-12">
+                <div id="js" class="imageCenter">
+                    <a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
+                    <a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
+                    <a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
+                    <a href="images/imagesBig/image4B.jpg"><img src="images/smallImages/image4S.jpg" alt="image4" /></a>
+                    <a href="images/imagesBig/image5B.jpg"><img src="images/smallImages/image5S.jpg" alt="image5" /></a>
+                    <a href="images/imagesBig/image6B.jpg"><img src="images/smallImages/image6S.jpg" alt="image6" /></a>
+                </div>
+            </div>
+            <div class="dt-6 tl-6 tp-6 ml-12">
+                <div id="bigPic" class="imageCenter"></div>
+            </div>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <!--  ACCORDION SECTION-->
+    <section id="accordionJS" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h2>Accordion</h2>
+            <div class="row">
+                <button class="button small moreInfoBtn">CODE</button>
+                <div class="more-info">
+                    <p>If you want to add an Accordion to your page, simply add 2 containers: </p>
+                    <p>First container parent will have <code>class="accordionItem"</code> Here you can add an additional class <code>.open</code> so this tab will be open when page is loaded. Your code will look like <code>&lt;div class="accordionItem open"&gt;</code></p>
+                    <p>Next, you would probably want to add tab name, just add <code>&lt;h2 class="accordionItemHeading"&gt;Heading&lt;/h2&gt;</code></p>
+                    <p>The second container is inserted in first one and looks like this<code>&lt;div class="accordionItemContent"&gt;</code></p>
+                    <p>Add a content to your first tab</p>
+                    <p>Close <code>class="accordionItemContent"</code> container</p>
+                    <p>Open <code>class="accordionItem open"</code> container</p>
+                    <p>You are done with your first tab. Create as many as you need.</p>
+                </div>
+            </div>
+            <div class="accordionItem open">
+                <h2 class="accordionItemHeading">Heading</h2>
+                <div class="accordionItemContent">
+                    <p>Open Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+                </div>
+            </div>
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Heading</h2>
+                <div class="accordionItemContent">
+                    <p>Close Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+                </div>
+            </div>
+            <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Heading</h2>
+                <div class="accordionItemContent">
+                    <p>Close Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, autem fugit quasi repudiandae suscipit beatae! Excepturi maxime modi totam eveniet. Veritatis dolore ad eaque fugit laborum soluta deleniti, qui magni.</p>
+                </div>
+            </div>
+        </div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <!--  END ACCORDION SECTION  -->
+    <!--SECTION TABS-->
+    <section id="tabsJS" class="row tabsAside">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <h1>Tabs</h1>
+            <div class="row">
+                <button class="button small moreInfoBtn">CODE</button>
+                <div class="more-info">
+                    <p>To add this nice tabs on your page you would need:</p>
+                    <p>Create a container with special class <code>&lt;div class="menu"&gt;</code></p>
+                    <p>Inside of this container create containers for each Header, such as <code>&lt;div&gt;&lt;span class="light"&gt;&lt;/span&gt;&lt;span &gt;Header 1&lt;/span&gt;&lt;/div&gt;</code> Insert as many tabs as you need. </p>
+                    <p>Close the container with a class <code>.menu</code></p>
+                    <p>Now we begin to work on our right side. Create a <code>&lt;ul&gt;</code>list with a class <code>&lt;ul class="tabsAside"&gt;</code></p>
+                    <p> Inside the <code>&lt;ul&gt;</code>create <code>&lt;li&gt;Content 1 Lorem...&lt;/li&gt;</code> and so on for each tab in the left side.</p>
+                    <p>Close <code>&lt;/ul&gt;</code></p>
+                </div>
+            </div>
+            <div class="dt-4 tl-4 tp-4 ml-4 mp-12">
+                <div class="menu">
+                    <div class="active"><span class="light"></span><span>Header 1</span></div>
+                    <div><span class="light"></span><span>Header 2</span></div>
+                    <div><span class="light"></span><span>Header 3</span></div>
+                </div>
+            </div>
+            <div class="dt-8 tl-8 tp-8 ml-8 mp-12">
+                <ul class="tabsAside">
+                    <li class="active">
+                        <div>
+                            <h5>
         
         Content 1
       </h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>
         
         Content 2
       </h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h5>
         
         Content 3
       </h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<!--END SECTION TABS-->
-	<!--REGISTRATION BAR-->
-	<section id="barJS" class="row">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<!-- multistep form -->
-			<h1>Progress Registration Bar</h1>
-			<div class="row">
-				<button class="button small moreInfoBtn">CODE</button>
-				<div class="more-info">
-					<p>Create form <code>&lt;form id="msform"&gt;</code></p>
-					<p>Creating top tree <code>&lt;ul id="progressbar"&gt;&lt;li class="active"&gt;Account Setup&lt;/li&gt;&lt;li class="active"&gt;Social Profiles&lt;/li&gt;&lt;li class="active"&gt;Personal Details&lt;/li&gt;&t;/ul&gt;</code></p>
-					<p>Creating the form #1<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Create your account&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;This is step 1&lt;/h3&gt; </code> Add fields that you require. and close <code>&lt;/fieldset&gt;</code></p>
-					<p>Creating the form #2<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Social Profiles&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;Your presence on the social network&lt;/h3&gt; </code> Add fields that you require and close <code> &lt;/fieldset&gt;</code></p>
-					<p>Creating the form #3<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Personal Details&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;We will never sell it&lt;/h3&gt; </code> Add fields that you require </p>
-					<p>Add the submit button <code>&lt;input type="button" name="previous" class="previous action-button" value="Previous" /&gt;</code>and close <code> &lt;/fieldset&gt;</code> </p>
-					<p>Close form <code>&lt;/form&gt;</code></p>
-				</div>
-
-			</div>
-			<form id="msform">
-				<!-- progressbar -->
-				<ul id="progressbar">
-					<li class="active">Account Setup</li>
-					<li>Social Profiles</li>
-					<li>Personal Details</li>
-				</ul>
-				<!-- fieldsets -->
-				<fieldset>
-					<h2 class="fs-title">Create your account</h2>
-					<h3 class="fs-subtitle">This is step 1</h3>
-					<input type="text" name="email" placeholder="Email" />
-					<input type="password" name="pass" placeholder="Password" />
-					<input type="password" name="cpass" placeholder="Confirm Password" />
-					<input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-				<fieldset>
-					<h2 class="fs-title">Social Profiles</h2>
-					<h3 class="fs-subtitle">Your presence on the social network</h3>
-					<input type="text" name="twitter" placeholder="Twitter" />
-					<input type="text" name="facebook" placeholder="Facebook" />
-					<input type="text" name="gplus" placeholder="Google Plus" />
-					<input type="button" name="previous" class="previous action-button" value="Previous" />
-					<input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-				<fieldset>
-					<h2 class="fs-title">Personal Details</h2>
-					<h3 class="fs-subtitle">We will never sell it</h3>
-					<input type="text" name="fname" placeholder="First Name" />
-					<input type="text" name="lname" placeholder="Last Name" />
-					<input type="text" name="phone" placeholder="Phone" />
-					<textarea name="address" placeholder="Address"></textarea>
-					<input type="button" name="previous" class="previous action-button" value="Previous" />
-					<input type="submit" name="submit" class="submit action-button" value="Submit" /> </fieldset>
-			</form>
-		</div>
-		<!--END REGISTRATION BAR-->
-		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
-	</section>
-
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident ipsa quibusdam non magnam explicabo praesentium. Provident eaque expedita ea corrupti accusantium aperiam, sapiente optio, placeat ipsum ullam quasi, perspiciatis!</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--END SECTION TABS-->
+    <!--REGISTRATION BAR-->
+    <section id="barJS" class="row">
+        <div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
+            <!-- multistep form -->
+            <h1>Progress Registration Bar</h1>
+            <div class="row">
+                <button class="button small moreInfoBtn">CODE</button>
+                <div class="more-info">
+                    <p>Create form <code>&lt;form id="msform"&gt;</code></p>
+                    <p>Creating top tree <code>&lt;ul id="progressbar"&gt;&lt;li class="active"&gt;Account Setup&lt;/li&gt;&lt;li class="active"&gt;Social Profiles&lt;/li&gt;&lt;li class="active"&gt;Personal Details&lt;/li&gt;&lt;/ul&gt;</code></p>
+                    <p>Creating the form #1<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Create your account&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;This is step 1&lt;/h3&gt; </code> Add fields that you require. and close <code>&lt;/fieldset&gt;</code></p>
+                    <p>Creating the form #2<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Social Profiles&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;Your presence on the social network&lt;/h3&gt; </code> Add fields that you require and close <code> &lt;/fieldset&gt;</code></p>
+                    <p>Creating the form #3<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Personal Details&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;We will never sell it&lt;/h3&gt; </code> Add fields that you require </p>
+                    <p>Add the submit button <code>&lt;input type="button" name="previous" class="previous action-button" value="Previous" /&gt;</code>and close <code> &lt;/fieldset&gt;</code> </p>
+                    <p>Close form <code>&lt;/form&gt;</code></p>
+                </div>
+            </div>
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Account Setup</li>
+                    <li>Social Profiles</li>
+                    <li>Personal Details</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Create your account</h2>
+                    <h3 class="fs-subtitle">This is step 1</h3>
+                    <input type="text" name="email" placeholder="Email" />
+                    <input type="password" name="pass" placeholder="Password" />
+                    <input type="password" name="cpass" placeholder="Confirm Password" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Social Profiles</h2>
+                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                    <input type="text" name="twitter" placeholder="Twitter" />
+                    <input type="text" name="facebook" placeholder="Facebook" />
+                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Personal Details</h2>
+                    <h3 class="fs-subtitle">We will never sell it</h3>
+                    <input type="text" name="fname" placeholder="First Name" />
+                    <input type="text" name="lname" placeholder="Last Name" />
+                    <input type="text" name="phone" placeholder="Phone" />
+                    <textarea name="address" placeholder="Address"></textarea>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" /> </fieldset>
+            </form>
+        </div>
+        <!--END REGISTRATION BAR--><a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+    <footer>
+        <p> &copy; 2017 JustWF</p>
+    </footer>
 </body>
-<footer>
-	<p> &copy; 2017 JustWF</p>
-</footer>
 
 </html>
