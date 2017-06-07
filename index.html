@@ -40,16 +40,15 @@
 			</li>
 			<li class="drop-down"> <a href="#js" class="link-menu"><i class="fa fa-code" aria-hidden="true"></i> Javascript</a>
 				<ul class="menu-drop">
-					<li> <a href="#galleryJS" class="link-menu">Gallery</a> </li>
+					<li> <a href="#js" class="link-menu">Gallery</a> </li>
 					<li> <a href="#accordionJS" class="link-menu"> Accordion</a> </li>
 					<li> <a href="#tabsJS" class="link-menu"> Tabs</a> </li>
 					<li> <a href="#barJS" class="link-menu"> Bar</a> </li>
 				</ul>
 			</li>
-			<li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a>
-			</li>
+			<li> <a href="demo.html" class="link-menu" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a> </li>
 			<li class="drop-down"> <a href="#" class="link-menu"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
-				<ul class="menu-dropLogin">
+				<div class="menu-dropLogin">
 					<form class="form">
 						<div class="wrap-input">
 							<input type="text" id="user" required placeholder="Username or E-mail" />
@@ -62,9 +61,8 @@
 						<button class="btnLogin">Login</button>
 						<div class="info"> <a href="#" class="forgot">Forgot your password?</a> </div>
 					</form>
-				</ul>
+				</div>
 			</li>
-
 		</ul>
 	</nav>
 	<!--END NAVIGATION-->
@@ -73,7 +71,7 @@
 		<section class="row justWF posRel">
 			<div class="dt-12 centerBottom" id="info">
 				<h1>JustWF</h1>
-				<h3>WEB FRAMEWORK SOLUTIONS</h3> <a class="button green" href="#intro"><i class="fa fa-play-circle"></i> Get Started</a> <a class="button blue" href=""><i class="fa fa-cloud-download"></i> Github</a> </div>
+				<h3>WEB FRAMEWORK SOLUTIONS</h3> <a class="button green" href="#intro"><i class="fa fa-play-circle"></i> Get Started</a> <a class="button blue" href="https://github.com/IrinaSerova/JustWF"><i class="fa fa-cloud-download"></i> Github</a> </div>
 		</section>
 	</header>
 	<!--END HEADER-->
@@ -166,7 +164,7 @@
 					<h2 class="accordionItemHeading">Fonts</h2>
 					<div class="accordionItemContent">
 						<h2>Lato</h2>
-						<p> The standard font JustWF uses is Lato. We have included the font files with our framework. </p>
+						<p> The standard font JustWF uses Lato. We have included the font files with our framework. </p>
 						<div class="row">
 							<p>We bundle our framework with the latest iteration of Lato Google has released. It comes with 6 different font weights you can use: </p>
 							<ul>
@@ -244,7 +242,7 @@
 								<p>
 									<mark>Mark text</mark>
 								</p>
-								<p><strike>Strike</strike></p>
+								<p><del>Strike</del></p>
 								<p><strong>Strong</strong></p>
 								<p> <a href="">Inline Link</a> </p> <address>
                         mail to <a href="mailto:webmaster@example.com">...this address...</a></address> </div>
@@ -254,7 +252,7 @@
 								<p><code>&lt;code&gt;</code></p>
 								<p><code>&lt;em&gt;</code></p>
 								<p><code>&lt;mark&gt;</code></p>
-								<p><code>&lt;strike&gt;</code></p>
+								<p><code>&lt;del&gt;</code></p>
 								<p><code>&lt;strong&gt;</code></p>
 								<p><code>&lt;a href=""&gt;Link&lt;/a&gt;</code></p>
 								<p><code>&lt;address&gt;</code></p>
@@ -630,7 +628,7 @@
 			<h1>Forms</h1>
 			<h3>Website Design Request</h3>
 			<p>Fill out the form to request a design</p>
-			<form action="" method="post" id="contactForm">
+			<form action="#" method="post" id="contactForm">
 				<fieldset id="getInTouch" title="info">
 					<legend>Information</legend>
 					<ul>
@@ -649,7 +647,7 @@
 							<label for="tel"><i class="fa fa-phone"></i> Phone Number</label>
 							<input type="tel" id="tel" placeholder="000-000-0000" /> </li>
 						<li class="altLabel">
-							<label for="typeWS">Type of Website You Need?</label>
+							<label for="reference">Type of Website You Need?</label>
 							<select id="reference">
 								<option hidden>Choose</option>
 								<option value="personal">Personal</option>
@@ -716,16 +714,16 @@
 			<h4>Responsive Images</h4>
 			<p>To make images resize responsively to page width, you can add the class <code>imageResponsive</code> to your image tag. </p>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Circle Images</h4> <img src="images/smallImages/image4S.jpg" class="imgCircle">
+				<h4>Circle Images</h4> <img src="images/smallImages/image4S.jpg" class="imgCircle" alt="Image Circle">
 				<p> </p>
-				<p>To shape the image to a circle you can add <code>imgCircle</code> class to your image tag. </p>
+				<p>To shape the image to a circle, you can add <code>imgCircle</code> class to your image tag. </p>
 			</div>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Rounded Corner</h4> <img src="images/smallImages/image5S.jpg" class="imgRounded">
+				<h4>Rounded Corner</h4> <img src="images/smallImages/image5S.jpg" class="imgRounded" alt="Image Rounded Corner">
 				<p>To make images resize responsively to page width, you can add the class <code>imgRounded</code> to your image tag. </p>
 			</div>
 			<div class="mp-12 ml-4 tb-4 tl-4 dt-4 item">
-				<h4>Thumbnail</h4> <img src="images/smallImages/image6S.jpg" class="imgThumbnail">
+				<h4>Thumbnail</h4> <img src="images/smallImages/image6S.jpg" class="imgThumbnail" alt="Image Thumbnail">
 				<p>To make images resize responsively to page width, you can add the class <code>imgThumbnail</code> to your image tag. </p>
 			</div>
 		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
@@ -733,7 +731,7 @@
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h1>Javascript</h1>
 			<h3>Gallery</h3>
-			<button class="button blue moreInfoBtn">CODE</button>
+			<button class="button small moreInfoBtn">CODE</button>
 			<div class="more-info">
 				<p>If you want to add a Gallery to your page, simply add 2 containers:</p>
 				<p>First container for small pictures we need to add <code>id="gallery"</code></p>
@@ -745,7 +743,7 @@
 
 			<h3>Click an image for larger version</h3>
 			<div class="dt-6 tl-6 tp-6  ml-12">
-				<div id="gallery" class="imageCenter">
+				<div id="js" class="imageCenter">
 					<a href="images/imagesBig/image1B.jpg"><img src="images/smallImages/image1S.jpg" alt="image1" /></a>
 					<a href="images/imagesBig/image2B.jpg"><img src="images/smallImages/image2S.jpg" alt="image2" /></a>
 					<a href="images/imagesBig/image3B.jpg"><img src="images/smallImages/image3S.jpg" alt="image3" /></a>
@@ -764,7 +762,7 @@
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h2>Accordion</h2>
 			<div class="row">
-				<button class="button blue moreInfoBtn">CODE</button>
+				<button class="button small moreInfoBtn">CODE</button>
 				<div class="more-info">
 					<p>If you want to add an Accordion to your page, simply add 2 containers: </p>
 					<p>First container parent will have <code>class="accordionItem"</code> Here you can add an additional class <code>.open</code> so this tab will be open when page is loaded. Your code will look like <code>&lt;div class="accordionItem open"&gt;</code></p>
@@ -801,13 +799,13 @@
 			</div>
 		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
 	<!--  END ACCORDION SECTION  -->
-	<!--SECTION TABS-->
+
 	<!--SECTION TABS-->
 	<section id="tabsJS" class="row tabsAside">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h1>Tabs</h1>
 			<div class="row">
-				<button class="button blue moreInfoBtn">CODE</button>
+				<button class="button small moreInfoBtn">CODE</button>
 				<div class="more-info">
 					<p>To add this nice tabs on your page you would need:</p>
 					<p>Create a container with special class <code>&lt;div class="menu"&gt;</code></p>
@@ -868,7 +866,7 @@
 			<!-- multistep form -->
 			<h1>Progress Registration Bar</h1>
 			<div class="row">
-				<button class="button blue moreInfoBtn">CODE</button>
+				<button class="button small moreInfoBtn">CODE</button>
 				<div class="more-info">
 					<p>Create form <code>&lt;form id="msform"&gt;</code></p>
 					<p>Creating top tree <code>&lt;ul id="progressbar"&gt;&lt;li class="active"&gt;Account Setup&lt;/li&gt;&lt;li class="active"&gt;Social Profiles&lt;/li&gt;&lt;li class="active"&gt;Personal Details&lt;/li&gt;&t;/ul&gt;</code></p>
@@ -914,11 +912,9 @@
 					<input type="submit" name="submit" class="submit action-button" value="Submit" /> </fieldset>
 			</form>
 		</div>
+		<!--END REGISTRATION BAR-->
 		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
 	</section>
-	<!--END PROGRESS REGISTRATION BAR-->
-
-
 
 </body>
 <footer>
