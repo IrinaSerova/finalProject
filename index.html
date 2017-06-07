@@ -733,16 +733,16 @@
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h1>Javascript</h1>
 			<h3>Gallery</h3>
-			<div class="row">
-				<div class="bgDesk">
-					<p>If you want to add a Gallery to your page, simply add 2 containers:</p>
-					<p>First container for small pictures we need to add <code>id="gallery"</code></p>
-					<p>Next we adding links to our pictures, first we add links to large size pictures, then to small size pictures. Like this
-						<br/> <code>&lt;a href="example.jpg"&gt;&lt;img src="example.jpg" alt="image1" /&gt;&lt;/a&gt;</code></p>
-					<p>The second container is for a large picture on the right side.Create an emply container <code>&lt;div id="bigPic"&gt;&lt;/div&gt;</code></p>
-					<p>Enjoy the Gallery</p>
-				</div>
+			<button class="button blue moreInfoBtn">CODE</button>
+			<div class="more-info">
+				<p>If you want to add a Gallery to your page, simply add 2 containers:</p>
+				<p>First container for small pictures we need to add <code>id="gallery"</code></p>
+				<p>Next we adding links to our pictures, first we add links to large size pictures, then to small size pictures. Like this
+					<code>&lt;a href="example.jpg"&gt;&lt;img src="example.jpg" alt="image1" /&gt;&lt;/a&gt;</code></p>
+				<p>The second container is for a large picture on the right side.Create an emply container <code>&lt;div id="bigPic"&gt;&lt;/div&gt;</code></p>
+				<p>Enjoy the Gallery</p>
 			</div>
+
 			<h3>Click an image for larger version</h3>
 			<div class="dt-6 tl-6 tp-6  ml-12">
 				<div id="gallery" class="imageCenter">
@@ -757,22 +757,26 @@
 			<div class="dt-6 tl-6 tp-6 ml-12">
 				<div id="bigPic" class="imageCenter"></div>
 			</div>
-		</div> <a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
+		</div>
+		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a> </section>
 	<!--  ACCORDION SECTION-->
 	<section id="accordionJS" class="row">
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h2>Accordion</h2>
 			<div class="row">
-				<div class="bgDesk">
+				<button class="button blue moreInfoBtn">CODE</button>
+				<div class="more-info">
 					<p>If you want to add an Accordion to your page, simply add 2 containers: </p>
 					<p>First container parent will have <code>class="accordionItem"</code> Here you can add an additional class <code>.open</code> so this tab will be open when page is loaded. Your code will look like <code>&lt;div class="accordionItem open"&gt;</code></p>
 					<p>Next, you would probably want to add tab name, just add <code>&lt;h2 class="accordionItemHeading"&gt;Heading&lt;/h2&gt;</code></p>
 					<p>The second container is inserted in first one and looks like this<code>&lt;div class="accordionItemContent"&gt;</code></p>
 					<p>Add a content to your first tab</p>
 					<p>Close <code>class="accordionItemContent"</code> container</p>
-					<p>Close <code>class="accordionItem open"</code> container</p>
+					<p>Open <code>class="accordionItem open"</code> container</p>
 					<p>You are done with your first tab. Create as many as you need.</p>
 				</div>
+
+
 			</div>
 			<div class="accordionItem open">
 				<h2 class="accordionItemHeading">Heading</h2>
@@ -803,7 +807,8 @@
 		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
 			<h1>Tabs</h1>
 			<div class="row">
-				<div class="bgDesk">
+				<button class="button blue moreInfoBtn">CODE</button>
+				<div class="more-info">
 					<p>To add this nice tabs on your page you would need:</p>
 					<p>Create a container with special class <code>&lt;div class="menu"&gt;</code></p>
 					<p>Inside of this container create containers for each Header, such as <code>&lt;div&gt;&lt;span class="light"&gt;&lt;/span&gt;&lt;span &gt;Header 1&lt;/span&gt;&lt;/div&gt;</code> Insert as many tabs as you need. </p>
@@ -812,6 +817,9 @@
 					<p> Inside the <code>&lt;ul&gt;</code>create <code>&lt;li&gt;Content 1 Lorem...&lt;/li&gt;</code> and so on for each tab in the left side.</p>
 					<p>Close <code>&lt;/ul&gt;</code></p>
 				</div>
+
+
+
 			</div>
 			<div class="dt-4 tl-4 tp-4 ml-4 mp-12">
 				<div class="menu">
@@ -860,7 +868,8 @@
 			<!-- multistep form -->
 			<h1>Progress Registration Bar</h1>
 			<div class="row">
-				<div class="bgDesk">
+				<button class="button blue moreInfoBtn">CODE</button>
+				<div class="more-info">
 					<p>Create form <code>&lt;form id="msform"&gt;</code></p>
 					<p>Creating top tree <code>&lt;ul id="progressbar"&gt;&lt;li class="active"&gt;Account Setup&lt;/li&gt;&lt;li class="active"&gt;Social Profiles&lt;/li&gt;&lt;li class="active"&gt;Personal Details&lt;/li&gt;&t;/ul&gt;</code></p>
 					<p>Creating the form #1<code>&lt;fieldset&gt;&lt;h2 class="fs-title"&gt;Create your account&lt;/h2&gt;&lt;h3 class="fs-subtitle"&gt;This is step 1&lt;/h3&gt; </code> Add fields that you require. and close <code>&lt;/fieldset&gt;</code></p>
@@ -869,6 +878,7 @@
 					<p>Add the submit button <code>&lt;input type="button" name="previous" class="previous action-button" value="Previous" /&gt;</code>and close <code> &lt;/fieldset&gt;</code> </p>
 					<p>Close form <code>&lt;/form&gt;</code></p>
 				</div>
+
 			</div>
 			<form id="msform">
 				<!-- progressbar -->
@@ -904,17 +914,15 @@
 					<input type="submit" name="submit" class="submit action-button" value="Submit" /> </fieldset>
 			</form>
 		</div>
+		<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
 	</section>
 	<!--END PROGRESS REGISTRATION BAR-->
 
-	<a class="up" href="#home"><i class="fa fa-chevron-circle-up"></i> Back Home</a>
-	<section id="footer">
-		<div class="mp-10 ml-10 tb-10 indent-tl-1 indent-dt-1">
-			<footer>
-				<p> &copy; 2017 JustWF</p>
-			</footer>
-		</div>
-	</section>
+
+
 </body>
+<footer>
+	<p> &copy; 2017 JustWF</p>
+</footer>
 
 </html>
